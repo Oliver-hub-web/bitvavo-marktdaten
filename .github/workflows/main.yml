@@ -8,107 +8,115 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: crypto-radar
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Binance Kerzen abrufen
+      - name: Binance Kerzen und RADAR pruefen
         run: |
-          mkdir -p data/binance
           python3 - <<'PY'
-          import json
-          import time
-          import urllib.request
-          import urllib.error
-          from datetime import datetime, timezone
+          import json, time, urllib.request, urllib.error
           from pathlib import Path
+          from datetime import datetime, timezone
 
-          coins = [
-              "RLC", "ZEUS", "RAD", "MET", "OGN",
-              "MAGIC", "KAIA", "LUMIA", "STRK",
-              "ZRC", "RSR", "GTC", "OSMO", "CTK",
-              "GNS", "WAL", "PUFFER", "POND",
-              "IRYS", "IOST"
-          ]
-
-          success = 0
-          failed = []
+          coins = ["RLC","ZEUS","RAD","MET","OGN","MAGIC","KAIA",
+                   "LUMIA","STRK","ZRC","RSR","GTC","OSMO","CTK",
+                   "GNS","WAL","PUFFER","POND","IRYS","IOST"]
+          base = Path("data/binance")
+          radar = Path("data/radar")
+          base.mkdir(parents=True, exist_ok=True)
+          radar.mkdir(parents=True, exist_ok=True)
+          signals_path = radar / "signals.json"
+          signals = json.loads(signals_path.read_text()) if signals_path.exists() else []
+          if not isinstance(signals, list):
+              raise RuntimeError("Ungueltige signals.json")
+          existing = {(s["symbol"], s["candle_time"]) for s in signals}
+          success, new_signals, failed = 0, 0, []
 
           for coin in coins:
-              symbol = f"{coin}USDT"
-              url = (
-                  "https://data-api.binance.vision"
-                  f"/api/v3/klines?symbol={symbol}"
-                  "&interval=5m&limit=1000"
-              )
-
+              symbol = coin + "USDT"
+              url = ("https://data-api.binance.vision/api/v3/klines?"
+                     f"symbol={symbol}&interval=5m&limit=1000")
               try:
-                  req = urllib.request.Request(
-                      url,
-                      headers={"User-Agent": "Mozilla/5.0"}
-                  )
-
-                  with urllib.request.urlopen(
-                      req, timeout=20
-                  ) as response:
+                  req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
+                  with urllib.request.urlopen(req, timeout=25) as response:
                       candles = json.load(response)
-
-                  if not isinstance(candles, list) or not candles:
-                      raise ValueError("Keine Kerzendaten")
-
-                  path = Path(
-                      f"data/binance/{symbol}-5m.json"
-                  )
-
-                  previous = (
-                      json.loads(path.read_text())
-                      if path.exists() else []
-                  )
-
-                  merged = {
-                      int(c[0]): c
-                      for c in previous + candles
-                  }
-
-                  result = [
-                      merged[t] for t in sorted(merged)
-                  ]
-
-                  path.write_text(
-                      json.dumps(result, separators=(",", ":"))
-                  )
-
+                  if not isinstance(candles, list) or len(candles) < 300:
+                      raise ValueError("Zu wenige Kerzen")
+                  # Nur abgeschlossene 5-Minuten-Kerzen verwenden.
+                  now_ms = int(time.time() * 1000)
+                  closed = [c for c in candles if int(c[6]) < now_ms]
+                  if len(closed) < 300:
+                      raise ValueError("Zu wenige abgeschlossene Kerzen")
+                  path = base / f"{symbol}-5m.json"
+                  previous = json.loads(path.read_text()) if path.exists() else []
+                  merged = {int(c[0]): c for c in previous + closed}
+                  path.write_text(json.dumps([merged[t] for t in sorted(merged)],separators=(",",":")))
                   success += 1
-                  print(
-                      f"ERFOLG: {symbol}: "
-                      f"{len(result)} Kerzen gespeichert"
-                  )
 
+                  last = closed[-1]
+                  price = float(last[4])
+                  prior_24h = float(closed[-289][4])
+                  change24 = 100 * (price / prior_24h - 1)
+                  # 5-Minuten-Volumen in USDT; gleiche Tageszeit ist nicht normalisiert.
+                  volume = float(last[7])
+                  baseline = sum(float(c[7]) for c in closed[-289:-1]) / 288
+                  volume_ratio = volume / baseline if baseline > 0 else 0
+                  previous_high = max(float(c[2]) for c in closed[-73:-1])
+                  breakout = price > previous_high
+                  # EXPERIMENTELLE RADAR-Regel, kein validiertes Kaufsignal.
+                  qualifies = (0 <= change24 < 15 and volume_ratio >= 3
+                               and breakout)
+                  print(f"{symbol}: 24h={change24:+.2f}% "
+                        f"Volumen={volume_ratio:.2f}x "
+                        f"6h-Ausbruch={'JA' if breakout else 'NEIN'} "
+                        f"RADAR={'JA' if qualifies else 'NEIN'}")
+                  if qualifies:
+                      key = (symbol, int(last[0]))
+                      if key not in existing:
+                          signals.append({
+                              "symbol": symbol,
+                              "market": "Binance USDT (NICHT Bitvavo EUR)",
+                              "candle_time": int(last[0]),
+                              "observed_at_utc": datetime.now(timezone.utc).isoformat(),
+                              "price_usdt": price,
+                              "change24_pct": round(change24, 3),
+                              "volume_ratio_24h": round(volume_ratio, 3),
+                              "breakout_level_usdt": previous_high,
+                              "status": "RADAR TEST - keine Kaufempfehlung"
+                          })
+                          existing.add(key)
+                          new_signals += 1
               except Exception as exc:
-                  failed.append(symbol)
-                  print(f"NICHT VERFÜGBAR: {symbol}: {exc}")
-
+                  failed.append(f"{symbol}: {exc}")
+                  print(f"FEHLER {symbol}: {exc}")
               time.sleep(0.2)
 
-          print(f"ERGEBNIS: {success}/{len(coins)} erfolgreich")
-          print(f"FEHLGESCHLAGEN: {', '.join(failed)}")
-
           if success == 0:
-              raise RuntimeError("Keine Kursdaten abgerufen!")
-
-          Path("data/binance/last_run.txt").write_text(
-              datetime.now(timezone.utc).isoformat()
-          )
+              raise RuntimeError("Keine Binance-Kerzen erhalten")
+          signals_path.write_text(json.dumps(signals, indent=2))
+          (radar / "last_scan.json").write_text(json.dumps({
+              "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+              "success": success,
+              "total": len(coins),
+              "new_signals": new_signals,
+              "failures": failed
+          }, indent=2))
+          print(f"ERGEBNIS: {success}/{len(coins)} Coins, "
+                f"{new_signals} neue RADAR-Signale")
+          print("HINWEIS: Binance USDT, keine Bitvavo EUR-Kurse.")
           PY
-
       - name: Daten speichern
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/binance/
+          git add data/binance/ data/radar/
           if ! git diff --cached --quiet; then
-            git commit -m "Update Binance market data"
+            git commit -m "Update Binance candles and radar test"
             git push
           fi
