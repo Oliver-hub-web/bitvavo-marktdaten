@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-10-21T19:00:13.113658+00:00",
+  "success": 16,
+  "total": 20,
+  "new_signals": 0,
+  "failures": [
+    "ZEUSUSDT: HTTP Error 400: Bad Request",
+    "ZRCUSDT: HTTP Error 400: Bad Request",
+    "PUFFERUSDT: HTTP Error 400: Bad Request",
+    "IRYSUSDT: HTTP Error 400: Bad Request"
+  ]
+}
