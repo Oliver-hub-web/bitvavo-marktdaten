@@ -1,11 +1,24 @@
 {
-  "scanned_at_utc": "2026-10-23T15:19:20.069955+00:00",
+  "scanned_at_utc": "2026-10-23T15:57:49.235221+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 0,
-  "new_signal_count": 0,
-  "signals": [],
+  "radar_count": 1,
+  "new_signal_count": 1,
+  "signals": [
+    {
+      "symbol": "RLCUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1792770600000,
+      "price_usdt": 0.6442,
+      "change24_pct": 0.016,
+      "volume_ratio_24h": 5.068,
+      "prior_6h_high_usdt": 0.659,
+      "breakout_6h": false,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    }
+  ],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
