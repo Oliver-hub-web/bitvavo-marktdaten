@@ -1,36 +1,11 @@
 {
-  "scanned_at_utc": "2026-10-24T00:09:43.233968+00:00",
+  "scanned_at_utc": "2026-10-24T00:54:24.565835+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 2,
-  "new_signal_count": 2,
-  "signals": [
-    {
-      "symbol": "LUMIAUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1792800000000,
-      "price_usdt": 0.0733,
-      "change24_pct": 3.385,
-      "volume_ratio_24h": 0.685,
-      "prior_6h_high_usdt": 0.0732,
-      "breakout_6h": true,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    },
-    {
-      "symbol": "CTKUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1792800000000,
-      "price_usdt": 0.1135,
-      "change24_pct": 1.43,
-      "volume_ratio_24h": 3.113,
-      "prior_6h_high_usdt": 0.1159,
-      "breakout_6h": false,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    }
-  ],
+  "radar_count": 0,
+  "new_signal_count": 0,
+  "signals": [],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
