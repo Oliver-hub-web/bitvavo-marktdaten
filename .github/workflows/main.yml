@@ -21,7 +21,7 @@ jobs:
       - name: Broad Binance spot radar and follow-up
         run: |
           python3 - <<'PY'
-          import json, time, urllib.request, urllib.parse, random
+          import json, time, urllib.request, urllib.parse
           from pathlib import Path
           from datetime import datetime, timezone
 
@@ -75,6 +75,8 @@ jobs:
               start = (int(time.time()) // 300 * 35) % len(tail)
               ordered += (tail[start:] + tail[:start])[:35]
           prior = load(ROOT / 'latest.json', {})
+          # Earlier test used mismatched base/quote units for buyer pressure.
+          # Do not treat those historical candidates as validated outcomes.
           watch = load(ROOT / 'watchlist.json', {})
           if not isinstance(watch, dict): watch = {}
           history = load(ROOT / 'signals.json', [])
@@ -101,7 +103,13 @@ jobs:
                   prior_range = closed[-25:-1]
                   compression = ((max(float(c[2]) for c in prior_range) /
                                   min(float(c[3]) for c in prior_range) - 1) < .035)
-                  buy_share = sum(float(c[9]) for c in closed[-3:]) / max(sum(float(c[7]) for c in closed[-3:]), 1e-12)
+                  # Binance kline index 10 = taker-buy QUOTE volume; index 7 = total QUOTE volume.
+                  # Index 9 is taker-buy BASE volume and must not be mixed with quote volume.
+                  buy_quote = sum(float(c[10]) for c in closed[-3:])
+                  total_quote = sum(float(c[7]) for c in closed[-3:])
+                  if total_quote <= 0 or not (0 <= buy_quote <= total_quote * 1.000001):
+                      raise ValueError('Invalid taker-buy quote volume')
+                  buy_share = min(1.0, max(0.0, buy_quote / total_quote))
                   factors = {'volume':ratio >= 2, 'breakout_1h':breakout1h,
                              'breakout_6h':breakout6h, 'buyer_pressure':buy_share >= .58,
                              'compression':compression}
