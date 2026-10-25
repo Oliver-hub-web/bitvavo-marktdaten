@@ -18,194 +18,241 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Broad Binance spot radar and follow-up
+      - name: Scan Bitvavo EUR markets and Binance lead indicators
         run: |
           python3 - <<'PY'
-          import json, time, urllib.request, urllib.parse
+          import json, time, urllib.request, urllib.parse, statistics
           from pathlib import Path
           from datetime import datetime, timezone
 
           ROOT = Path('data/radar')
           ROOT.mkdir(parents=True, exist_ok=True)
           now = int(time.time() * 1000)
-          def fetch(path, params=None):
-              url = 'https://data-api.binance.vision/api/v3/' + path
+          errors = []
+          stable = {'USDT','USDC','FDUSD','TUSD','USDE','USDD','DAI','USDP',
+                    'PYUSD','EURC','EURI','AEUR','XUSD','RLUSD','U','USD1','EUROP'}
+
+          def api(url, params=None):
               if params:
                   url += '?' + urllib.parse.urlencode(params)
-              req = urllib.request.Request(url, headers={'User-Agent': 'crypto-market-research/1.0'})
-              with urllib.request.urlopen(req, timeout=18) as response:
-                  return json.load(response)
-          def load(path, default):
-              try:
-                  return json.loads(path.read_text())
-              except (OSError, ValueError):
-                  return default
-          def save(path, data):
-              path.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+              req = urllib.request.Request(url, headers={'User-Agent':'market-radar-research/1.1'})
+              with urllib.request.urlopen(req, timeout=15) as res:
+                  return json.load(res)
 
-          # Discover the actual available spot universe, not a fixed list of 20 coins.
-          info = fetch('exchangeInfo')
-          # Stablecoin bases often create misleading pump signals.
-          stable_bases = {'USDT','USDC','FDUSD','TUSD','USDE','USDD','DAI',
-                          'USDP','PYUSD','EURC','EURI','AEUR','XUSD','U'}
-          tradable = {m['symbol'] for m in info['symbols']
-                      if m.get('status') == 'TRADING' and m.get('isSpotTradingAllowed', True)
-                      and m.get('quoteAsset') in ('USDT', 'USDC', 'EUR')
-                      and m.get('baseAsset') not in stable_bases}
-          tickers = fetch('ticker/24hr')
-          market = {t['symbol']: t for t in tickers if t.get('symbol') in tradable}
-          def num(t, key):
-              try: return float(t.get(key, 0))
-              except (TypeError, ValueError): return 0.0
-          # Filter out low-liquidity markets and leveraged token lookalikes.
-          candidates = []
-          for symbol, t in market.items():
-              base = symbol[:-4] if symbol.endswith(('USDT','USDC')) else symbol[:-3]
-              if base.endswith(('UP','DOWN','BULL','BEAR')):
-                  continue
-              change = num(t, 'priceChangePercent')
-              qvol = num(t, 'quoteVolume')
-              # EUR and stablecoin quoted volumes are comparable only approximately.
-              if qvol < 100000 or change < -6 or change >= 30:
-                  continue
-              score = (5 if 0 <= change < 15 else 0) + min(qvol / 500000, 5)
-              if -2 <= change < 15:
-                  candidates.append((score, symbol, t))
-          candidates.sort(reverse=True)
-          # Rotate coverage so less prominent coins are not excluded indefinitely.
-          # Tickers for every tradable market are checked each run.
-          # Expensive 5m candles rotate across all eligible candidates.
-          # Priority candidates are scanned every run; tail coverage cycles.
-          priority_count = 50
-          batch_count = 170
-          ordered = candidates[:priority_count]
-          tail = candidates[priority_count:]
-          if tail:
-              scan_slot = int(time.time()) // 300
-              start = (scan_slot * batch_count) % len(tail)
-              ordered += (tail[start:] + tail[:start])[:batch_count]
-          # Probe Bitvavo's public market list. No EUR prices are inferred.
-          bitvavo_status = {'available': False, 'eur_markets': None}
+          def load(name, default):
+              try: return json.loads((ROOT / name).read_text())
+              except (OSError, ValueError): return default
+
+          def save(name, obj):
+              (ROOT / name).write_text(json.dumps(obj, indent=2, ensure_ascii=False))
+
+          def f(v, default=0):
+              try: return float(v)
+              except (ValueError, TypeError): return default
+
+          def calc(bars, source):
+              # bars: chronological completed candles [open, high, low, close, quote_volume, buy_quote_or_None]
+              if len(bars) < 290: return None
+              b = bars[-289:]
+              price = b[-1][3]
+              if price <= 0 or b[0][3] <= 0: return None
+              change = 100 * (price / b[0][3] - 1)
+              baseline = [c[4] for c in b[:-1] if c[4] >= 0]
+              median = statistics.median(baseline)
+              ratio = b[-1][4] / median if median > 0 else 0
+              high1h = max(c[1] for c in b[-13:-1])
+              high6h = max(c[1] for c in b[-73:-1])
+              breakout1h = price > high1h
+              breakout6h = price > high6h
+              prior = b[-25:-1]
+              low = min(c[2] for c in prior)
+              compression = low > 0 and (max(c[1] for c in prior) / low - 1) < .035
+              buy = None
+              if source == 'Binance':
+                  total = sum(c[4] for c in b[-3:])
+                  taken = sum(c[5] for c in b[-3:])
+                  if total > 0 and 0 <= taken <= total * 1.000001:
+                      buy = min(1, taken / total)
+              factors = {'volume': ratio >= 2, 'breakout_1h':breakout1h,
+                         'breakout_6h':breakout6h, 'compression':compression,
+                         'buyer_pressure':buy is not None and buy >= .58}
+              independent = int(factors['volume']) + int(breakout1h or breakout6h) + int(compression) + int(factors['buyer_pressure'])
+              early = -2 <= change < 15 and (ratio >= 2 or breakout1h or breakout6h)
+              if source == 'Binance': early = early and buy is not None and buy >= .48
+              if not early: return None
+              level = ('B_TEST' if independent >= 4 else
+                       'A_TEST' if independent >= 2 and factors['volume'] else 'WATCH_TEST')
+              return {'price':price, 'change24_pct':round(change,3),
+                      'volume_ratio_median24h':round(ratio,2),
+                      'buy_share_15m':round(buy,3) if buy is not None else None,
+                      'factors':factors,'level':level}
+
+          # Bitvavo: discover every currently trading EUR pair, fetch 24h ticker snapshots
+          # and rotate 5m candles across all EUR pairs without excluding low-liquidity coins.
+          bitvavo_markets = []
+          bv_tickers = {}
+          bv_signals = []
+          bv_checked = 0
+          bv_requested = 0
           try:
-              req = urllib.request.Request('https://api.bitvavo.com/v2/markets',
-                                           headers={'User-Agent':'crypto-market-research/1.0'})
-              with urllib.request.urlopen(req, timeout=12) as response:
-                  bv_markets = json.load(response)
-              bitvavo_status = {'available': True,
-                                'eur_markets': sum(1 for m in bv_markets
-                                    if m.get('quote') == 'EUR' and m.get('status') == 'trading')}
+              markets = api('https://api.bitvavo.com/v2/markets')
+              bitvavo_markets = sorted(m['market'] for m in markets if
+                  m.get('quote') == 'EUR' and m.get('status') == 'trading'
+                  and m.get('base') not in stable and m.get('market'))
+              ticker_data = api('https://api.bitvavo.com/v2/ticker/24h')
+              bv_tickers = {t['market']:t for t in ticker_data if isinstance(t,dict)
+                            and t.get('market') in bitvavo_markets}
+              # Preserve a compact, complete ticker-level view of all Bitvavo EUR pairs.
+              snapshot = []
+              for symbol in bitvavo_markets:
+                  t = bv_tickers.get(symbol,{})
+                  open_price, last = f(t.get('open')), f(t.get('last'))
+                  change = 100 * (last/open_price-1) if open_price > 0 else None
+                  snapshot.append({'market':symbol,'last':last or None,
+                                   'change24_pct':round(change,3) if change is not None else None,
+                                   'volume_base_24h':f(t.get('volume')),
+                                   'volume_quote_24h':f(t.get('volumeQuote'))})
+              save('bitvavo_eur_tickers.json', {'scanned_at_utc':datetime.now(timezone.utc).isoformat(),
+                                               'count':len(bitvavo_markets),'markets':snapshot})
+              # 120 pairs per run; deterministic time rotation, 428 markets in ~4 runs.
+              bv_batch = 120
+              bv_requested = min(bv_batch,len(bitvavo_markets))
+              start = ((now // 300000) * bv_batch) % max(1,len(bitvavo_markets))
+              selected = (bitvavo_markets[start:] + bitvavo_markets[:start])[:bv_requested]
+              for symbol in selected:
+                  try:
+                      raw = api('https://api.bitvavo.com/v2/' + urllib.parse.quote(symbol, safe='') + '/candles',
+                                {'interval':'5m','limit':300})
+                      # Bitvavo candles: [timestamp, open, high, low, close, base_volume]
+                      # Quote volume is estimated per candle as base volume * closing EUR price.
+                      bars = []
+                      for c in sorted(raw,key=lambda x:int(x[0])):
+                          if int(c[0]) + 300000 > now: continue
+                          op,hi,lo,cl,vol = map(float,c[1:6])
+                          bars.append([op,hi,lo,cl,vol*cl,None])
+                      bv_checked += 1
+                      signal = calc(bars,'Bitvavo')
+                      if signal:
+                          bv_signals.append({'symbol':symbol,'source':'Bitvavo EUR',
+                                             **signal,'warning':'Experimental signal; no investment recommendation'})
+                  except Exception as exc:
+                      errors.append({'source':'Bitvavo','symbol':symbol,'error':str(exc)[:140]})
+                  time.sleep(.04)
           except Exception as exc:
-              bitvavo_status['error'] = str(exc)[:180]
-          prior = load(ROOT / 'latest.json', {})
-          # Earlier test used mismatched base/quote units for buyer pressure.
-          # Do not treat those historical candidates as validated outcomes.
-          watch = load(ROOT / 'watchlist.json', {})
-          if not isinstance(watch, dict): watch = {}
-          history = load(ROOT / 'signals.json', [])
-          if not isinstance(history, list): history = []
-          errors, found, followups = [], [], []
-          examined = 0
-          for _, symbol, t in ordered:
-              try:
-                  bars = fetch('klines', {'symbol':symbol, 'interval':'5m', 'limit':1000})
-                  closed = [c for c in bars if int(c[6]) < now]
-                  if len(closed) < 290: continue
-                  examined += 1
-                  last = closed[-1]
-                  price = float(last[4])
-                  change24 = 100 * (price / float(closed[-289][4]) - 1)
-                  vol = float(last[7])
-                  baseline = sorted(float(c[7]) for c in closed[-289:-1])
-                  median = (baseline[143] + baseline[144]) / 2
-                  ratio = vol / median if median > 0 else 0
-                  high1h = max(float(c[2]) for c in closed[-13:-1])
-                  high6h = max(float(c[2]) for c in closed[-73:-1])
-                  breakout1h = price > high1h
-                  breakout6h = price > high6h
-                  prior_range = closed[-25:-1]
-                  compression = ((max(float(c[2]) for c in prior_range) /
-                                  min(float(c[3]) for c in prior_range) - 1) < .035)
-                  # Binance kline index 10 = taker-buy QUOTE volume; index 7 = total QUOTE volume.
-                  # Index 9 is taker-buy BASE volume and must not be mixed with quote volume.
-                  buy_quote = sum(float(c[10]) for c in closed[-3:])
-                  total_quote = sum(float(c[7]) for c in closed[-3:])
-                  if total_quote <= 0 or not (0 <= buy_quote <= total_quote * 1.000001):
-                      raise ValueError('Invalid taker-buy quote volume')
-                  buy_share = min(1.0, max(0.0, buy_quote / total_quote))
-                  factors = {'volume':ratio >= 2, 'breakout_1h':breakout1h,
-                             'breakout_6h':breakout6h, 'buyer_pressure':buy_share >= .58,
-                             'compression':compression}
-                  # Breakouts across overlapping windows count as one independent factor.
-                  independent = int(factors['volume']) + int(breakout1h or breakout6h) + int(factors['buyer_pressure']) + int(compression)
-                  early = -2 <= change24 < 15 and (ratio >= 2 or breakout1h or breakout6h) and buy_share >= .48
-                  level = 'B_TEST' if independent >= 4 and early else ('A_TEST' if independent >= 2 and factors['volume'] and early else 'WATCH_TEST')
-                  if not early: continue
-                  item = {'symbol':symbol, 'source':'Binance spot (NOT Bitvavo EUR)',
-                          'candle_time':int(last[0]), 'price':price,
-                          'change24_pct':round(change24,3),
-                          'volume_ratio_median24h':round(ratio,2),
-                          'buy_share_15m':round(buy_share,3),
-                          'factors':factors, 'level':level,
-                          'warning':'Experimental, not validated; no investment recommendation'}
-                  found.append(item)
-                  existing = watch.get(symbol)
-                  if not existing or existing.get('status') in ('expired','invalidated'):
-                      watch[symbol] = {'first_seen_utc':datetime.now(timezone.utc).isoformat(),
-                                       'first_price':price, 'last_price':price,
-                                       'max_price':price, 'min_price':price,
-                                       'last_seen_utc':datetime.now(timezone.utc).isoformat(),
-                                       'status':'tracking', 'level':level}
-                      history.append(item)
-                  else:
-                      existing['last_price'] = price
-                      existing['max_price'] = max(existing['max_price'], price)
-                      existing['min_price'] = min(existing['min_price'], price)
-                      existing['last_seen_utc'] = datetime.now(timezone.utc).isoformat()
-                      existing['level'] = level
-              except Exception as exc:
-                  errors.append({'symbol':symbol,'error':str(exc)[:150]})
-              time.sleep(.05)
+              errors.append({'source':'Bitvavo','error':'Market/ticker API unavailable: '+str(exc)[:140]})
 
-          # Follow up on all tracked signals, even after they stop qualifying.
-          for symbol, w in list(watch.items()):
-              if symbol not in market or w.get('status') != 'tracking': continue
-              price = num(market[symbol], 'lastPrice')
-              if not price or not w.get('first_price'): continue
+          # Binance: complementary USDT/USDC/EUR lead indicators, not Bitvavo confirmation.
+          binance_signals = []
+          binance_checked = 0
+          binance_requested = 0
+          binance_discovered = 0
+          try:
+              base = 'https://data-api.binance.vision/api/v3/'
+              info = api(base+'exchangeInfo')
+              tradable = {m['symbol'] for m in info['symbols'] if
+                  m.get('status') == 'TRADING' and m.get('isSpotTradingAllowed',True)
+                  and m.get('quoteAsset') in ('USDT','USDC','EUR')
+                  and m.get('baseAsset') not in stable
+                  and not m.get('baseAsset','').endswith(('UP','DOWN','BULL','BEAR'))}
+              tickers = {t['symbol']:t for t in api(base+'ticker/24hr') if t.get('symbol') in tradable}
+              binance_discovered = len(tickers)
+              eligible = []
+              for sym,t in tickers.items():
+                  change,volume = f(t.get('priceChangePercent')),f(t.get('quoteVolume'))
+                  if volume >= 100000 and -2 <= change < 15:
+                      eligible.append((min(volume/500000,5) + (5 if change >= 0 else 0),sym))
+              eligible.sort(reverse=True)
+              head,tail = eligible[:40],eligible[40:]
+              batch = 100
+              start = ((now//300000)*batch) % max(1,len(tail))
+              selected = head + (tail[start:]+tail[:start])[:batch]
+              binance_requested = len(selected)
+              for _,sym in selected:
+                  try:
+                      raw = api(base+'klines',{'symbol':sym,'interval':'5m','limit':300})
+                      bars = [[f(c[1]),f(c[2]),f(c[3]),f(c[4]),f(c[7]),f(c[10])]
+                              for c in raw if int(c[6]) < now]
+                      binance_checked += 1
+                      signal = calc(bars,'Binance')
+                      if signal:
+                          binance_signals.append({'symbol':sym,'source':'Binance spot (NOT Bitvavo EUR)',
+                                                  **signal,'warning':'Experimental signal; no investment recommendation'})
+                  except Exception as exc:
+                      errors.append({'source':'Binance','symbol':sym,'error':str(exc)[:140]})
+                  time.sleep(.04)
+          except Exception as exc:
+              errors.append({'source':'Binance','error':str(exc)[:140]})
+
+          # Keep previous archives, but separate Bitvavo and Binance keys and avoid
+          # counting historical contaminated test alerts as verified successes.
+          watch = load('watchlist.json',{})
+          if not isinstance(watch,dict): watch = {}
+          history = load('signals.json',[])
+          if not isinstance(history,list): history = []
+          prior = load('latest.json',{})
+          found = bv_signals + binance_signals
+          current_time = datetime.now(timezone.utc).isoformat()
+          new_count = 0
+          for s in found:
+              key = s['source'].split(' ')[0] + ':' + s['symbol']
+              existing = watch.get(key)
+              if not existing or existing.get('status') in ('expired','invalidated'):
+                  watch[key] = {'first_seen_utc':current_time,'first_price':s['price'],
+                                'last_price':s['price'],'max_price':s['price'],
+                                'min_price':s['price'],'last_seen_utc':current_time,
+                                'status':'tracking','level':s['level'],'source':s['source']}
+                  history.append(s)
+                  new_count += 1
+              else:
+                  existing['last_seen_utc'] = current_time
+                  existing['last_price'] = s['price']
+                  existing['max_price'] = max(existing.get('max_price',s['price']),s['price'])
+                  existing['min_price'] = min(existing.get('min_price',s['price']),s['price'])
+                  existing['level'] = s['level']
+          followups = []
+          for key,w in list(watch.items()):
+              if w.get('status') != 'tracking' or not w.get('first_price'): continue
+              source,sym = key.split(':',1) if ':' in key else ('Binance',key)
+              if source == 'Bitvavo':
+                  price = f(bv_tickers.get(sym,{}).get('last'))
+              else:
+                  price = f(tickers.get(sym,{}).get('lastPrice')) if 'tickers' in locals() else 0
+              if price <= 0: continue
               w['last_price'] = price
-              w['max_price'] = max(w.get('max_price', price), price)
-              w['min_price'] = min(w.get('min_price', price), price)
-              delta = (price / w['first_price'] - 1) * 100
-              peak = (w['max_price'] / w['first_price'] - 1) * 100
-              age = (now / 1000 - datetime.fromisoformat(w['first_seen_utc']).timestamp()) / 3600
-              w['change_since_alert_pct'] = round(delta,2)
-              w['max_gain_since_alert_pct'] = round(peak,2)
+              w['max_price'] = max(w.get('max_price',price),price)
+              w['min_price'] = min(w.get('min_price',price),price)
+              age = (now/1000-datetime.fromisoformat(w['first_seen_utc']).timestamp())/3600
+              peak = 100*(w['max_price']/w['first_price']-1)
+              delta = 100*(price/w['first_price']-1)
               w['age_hours'] = round(age,1)
-              if age >= 168:
-                  w['status'] = 'expired'
-              elif delta <= -10:
-                  w['status'] = 'invalidated'
-              if w['status'] != 'tracking' or peak >= 10:
-                  followups.append({'symbol':symbol,'status':w['status'],
-                                    'change_pct':round(delta,2),'max_gain_pct':round(peak,2),
+              w['max_gain_since_alert_pct'] = round(peak,2)
+              w['change_since_alert_pct'] = round(delta,2)
+              if age >= 168: w['status'] = 'expired'
+              elif delta <= -10: w['status'] = 'invalidated'
+              if peak >= 10 or w['status'] != 'tracking':
+                  followups.append({'symbol':sym,'source':source,'status':w['status'],
+                                    'max_gain_pct':round(peak,2),'change_pct':round(delta,2),
                                     'age_hours':round(age,1)})
-          # Bound JSON growth; preserve original historical signal archive.
-          save(ROOT / 'watchlist.json', watch)
-          save(ROOT / 'signals.json', history[-10000:])
-          previous = {s.get('symbol') for s in prior.get('signals', []) if isinstance(s,dict)}
-          latest = {'scanned_at_utc':datetime.now(timezone.utc).isoformat(),
-                    'source':'Binance spot USDT/USDC/EUR; Bitvavo verification NOT implemented',
-                    'markets_discovered':len(market),
-                    'markets_preselected':len(candidates),
-                    'markets_requested':len(ordered), 'markets_ok':examined,
-                    'bitvavo_market_probe':bitvavo_status,
-                    'coverage_note':'All Binance tickers checked; candle checks rotate through eligible markets.',
-                    'radar_count':len(found),
-                    'new_signal_count':len([s for s in found if s['symbol'] not in previous]),
-                    'signals':found[:100], 'followups':followups[:100],
-                    'errors':errors[:40],
-                    'coverage_warning':'Rotating Binance candle coverage; Bitvavo EUR prices, forums and news NOT verified. Signals experimental.'}
-          save(ROOT / 'latest.json', latest)
-          print('Discovered:',len(market),'scanned:',examined,'signals:',len(found),'errors:',len(errors))
+          save('watchlist.json',watch)
+          save('signals.json',history[-10000:])
+          latest = {'scanned_at_utc':current_time,
+                    'source':'Bitvavo EUR candles plus Binance lead indicators',
+                    'bitvavo_eur_markets':len(bitvavo_markets),
+                    'bitvavo_ticker_markets':len(bv_tickers),
+                    'bitvavo_candles_requested':bv_requested,
+                    'bitvavo_candles_ok':bv_checked,
+                    'bitvavo_signal_count':len(bv_signals),
+                    'binance_markets_discovered':binance_discovered,
+                    'binance_candles_requested':binance_requested,
+                    'binance_candles_ok':binance_checked,
+                    'binance_signal_count':len(binance_signals),
+                    'radar_count':len(found),'new_signal_count':new_count,
+                    'signals':found[:150], 'followups':followups[:100],
+                    'errors':errors[:50],
+                    'coverage_warning':'Bitvavo EUR ticker snapshot every run; 5m candle analysis rotates (120/run). Binance rotates too. No social/news checks or confirmed predictive performance. Bitvavo buyer pressure unavailable.'}
+          save('latest.json',latest)
+          print('Bitvavo EUR',len(bitvavo_markets),'candles',bv_checked,'signals',len(bv_signals),
+                '| Binance candles',binance_checked,'signals',len(binance_signals),'errors',len(errors))
           PY
       - name: Save radar data
         run: |
@@ -213,6 +260,6 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/radar/
           if ! git diff --cached --quiet; then
-            git commit -m 'Update broad market radar and follow-up'
+            git commit -m 'Update Bitvavo EUR radar and follow-up'
             git push
           fi
