@@ -1,5 +1,5 @@
 {
-  "scanned_at_utc": "2026-10-25T16:31:06.620733+00:00",
+  "scanned_at_utc": "2026-10-25T16:59:21.910851+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
@@ -9,10 +9,10 @@
     {
       "symbol": "OSMOUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1792945500000,
+      "candle_time": 1792947000000,
       "price_usdt": 0.051,
-      "change24_pct": 12.335,
-      "volume_ratio_24h": 4.682,
+      "change24_pct": 10.151,
+      "volume_ratio_24h": 3.633,
       "prior_6h_high_usdt": 0.0527,
       "breakout_6h": false,
       "level": "RADAR_TEST",
