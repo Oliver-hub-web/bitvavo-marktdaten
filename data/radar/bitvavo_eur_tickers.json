@@ -1,0 +1,2974 @@
+{
+  "scanned_at_utc": "2026-10-25T11:33:20.593948+00:00",
+  "count": 424,
+  "markets": [
+    {
+      "market": "0G-EUR",
+      "last": 0.18215,
+      "change24_pct": -6.103,
+      "volume_base_24h": 36244.66321,
+      "volume_quote_24h": 6882.917675143
+    },
+    {
+      "market": "1INCH-EUR",
+      "last": 0.079236,
+      "change24_pct": -0.962,
+      "volume_base_24h": 84850.82387689,
+      "volume_quote_24h": 6643.079447125086
+    },
+    {
+      "market": "2Z-EUR",
+      "last": 0.02563,
+      "change24_pct": -6.446,
+      "volume_base_24h": 542837.52473,
+      "volume_quote_24h": 13907.38804863637
+    },
+    {
+      "market": "AAVE-EUR",
+      "last": 121.11,
+      "change24_pct": -3.313,
+      "volume_base_24h": 1957.32837668,
+      "volume_quote_24h": 238437.6632230828
+    },
+    {
+      "market": "ACE-EUR",
+      "last": 0.12366,
+      "change24_pct": -2.33,
+      "volume_base_24h": 264934.46281743,
+      "volume_quote_24h": 33563.878872274276
+    },
+    {
+      "market": "ACH-EUR",
+      "last": 0.0045184,
+      "change24_pct": -1.829,
+      "volume_base_24h": 2664344.11447241,
+      "volume_quote_24h": 12119.790707039943
+    },
+    {
+      "market": "ACT-EUR",
+      "last": 0.007492,
+      "change24_pct": -2.117,
+      "volume_base_24h": 472438.697847,
+      "volume_quote_24h": 3556.894677608918
+    },
+    {
+      "market": "ACU-EUR",
+      "last": 0.0995,
+      "change24_pct": 1.406,
+      "volume_base_24h": 1565494.07102,
+      "volume_quote_24h": 161506.7169404545
+    },
+    {
+      "market": "ACX-EUR",
+      "last": 0.037957,
+      "change24_pct": 5.509,
+      "volume_base_24h": 11119.22878904,
+      "volume_quote_24h": 432.45855795756324
+    },
+    {
+      "market": "ADA-EUR",
+      "last": 0.18159,
+      "change24_pct": -2.329,
+      "volume_base_24h": 61109312.282635,
+      "volume_quote_24h": 11175083.027414212
+    },
+    {
+      "market": "ADX-EUR",
+      "last": 0.0498,
+      "change24_pct": -2.274,
+      "volume_base_24h": 960.59443333,
+      "volume_quote_24h": 48.02070835985962
+    },
+    {
+      "market": "AERO-EUR",
+      "last": 0.596,
+      "change24_pct": -5.395,
+      "volume_base_24h": 692418.96632503,
+      "volume_quote_24h": 431098.9680868817
+    },
+    {
+      "market": "AEVO-EUR",
+      "last": 0.019086,
+      "change24_pct": -3.518,
+      "volume_base_24h": 390080.71094139,
+      "volume_quote_24h": 7604.13464285097
+    },
+    {
+      "market": "AGI-EUR",
+      "last": 0.004237,
+      "change24_pct": -5.149,
+      "volume_base_24h": 2456205.83302162,
+      "volume_quote_24h": 10735.04112905848
+    },
+    {
+      "market": "AGLD-EUR",
+      "last": 0.15371,
+      "change24_pct": -1.126,
+      "volume_base_24h": 61288.82257429,
+      "volume_quote_24h": 9701.79301632496
+    },
+    {
+      "market": "AI-EUR",
+      "last": 0.016003,
+      "change24_pct": -2.977,
+      "volume_base_24h": 3148977.1496,
+      "volume_quote_24h": 52023.5784774611
+    },
+    {
+      "market": "AIOZ-EUR",
+      "last": 0.08786,
+      "change24_pct": -3.486,
+      "volume_base_24h": 363579.65964164,
+      "volume_quote_24h": 32343.866730161804
+    },
+    {
+      "market": "AIXBT-EUR",
+      "last": 0.0162,
+      "change24_pct": -4.509,
+      "volume_base_24h": 339577.47103073,
+      "volume_quote_24h": 5603.818756823723
+    },
+    {
+      "market": "AKT-EUR",
+      "last": 0.57405,
+      "change24_pct": -2.354,
+      "volume_base_24h": 217858.82799759,
+      "volume_quote_24h": 126221.00211765211
+    },
+    {
+      "market": "ALGO-EUR",
+      "last": 0.091537,
+      "change24_pct": -1.792,
+      "volume_base_24h": 1197147.29155,
+      "volume_quote_24h": 109519.84448643676
+    },
+    {
+      "market": "ALICE-EUR",
+      "last": 0.11881,
+      "change24_pct": -1.875,
+      "volume_base_24h": 166103.086442,
+      "volume_quote_24h": 19922.97024127228
+    },
+    {
+      "market": "ALIGN-EUR",
+      "last": 0.003893,
+      "change24_pct": 6.105,
+      "volume_base_24h": 10752066.5245,
+      "volume_quote_24h": 40978.5794440342
+    },
+    {
+      "market": "ALLO-EUR",
+      "last": 0.16211,
+      "change24_pct": -1.752,
+      "volume_base_24h": 95326.2616,
+      "volume_quote_24h": 15556.8626994677
+    },
+    {
+      "market": "ALT-EUR",
+      "last": 0.0057159,
+      "change24_pct": -4.735,
+      "volume_base_24h": 16255139.554,
+      "volume_quote_24h": 97471.3130192887
+    },
+    {
+      "market": "AMP-EUR",
+      "last": 0.0006462,
+      "change24_pct": -4.479,
+      "volume_base_24h": 38527808.879,
+      "volume_quote_24h": 25384.9716182249
+    },
+    {
+      "market": "ANIME-EUR",
+      "last": 0.0026154,
+      "change24_pct": -8.757,
+      "volume_base_24h": 402198010.66384655,
+      "volume_quote_24h": 1239522.6737699527
+    },
+    {
+      "market": "ANKR-EUR",
+      "last": 0.0041836,
+      "change24_pct": 9.127,
+      "volume_base_24h": 37696781.08662668,
+      "volume_quote_24h": 151752.28311480407
+    },
+    {
+      "market": "APE-EUR",
+      "last": 0.11214,
+      "change24_pct": -3.726,
+      "volume_base_24h": 257688.44694648,
+      "volume_quote_24h": 29476.161537101976
+    },
+    {
+      "market": "API3-EUR",
+      "last": 0.22338,
+      "change24_pct": -3.332,
+      "volume_base_24h": 118030.87433274,
+      "volume_quote_24h": 27027.484166803675
+    },
+    {
+      "market": "APT-EUR",
+      "last": 0.6168,
+      "change24_pct": -3.835,
+      "volume_base_24h": 167150.7336379,
+      "volume_quote_24h": 105391.5567798179
+    },
+    {
+      "market": "ARB-EUR",
+      "last": 0.14635,
+      "change24_pct": -2.777,
+      "volume_base_24h": 1709112.07836616,
+      "volume_quote_24h": 253293.31573581722
+    },
+    {
+      "market": "ARK-EUR",
+      "last": 0.15656,
+      "change24_pct": -4.215,
+      "volume_base_24h": 2110636.77909374,
+      "volume_quote_24h": 349826.3989310089
+    },
+    {
+      "market": "ARKM-EUR",
+      "last": 0.11026,
+      "change24_pct": -1.904,
+      "volume_base_24h": 193085.56150493,
+      "volume_quote_24h": 21575.25966241838
+    },
+    {
+      "market": "ARPA-EUR",
+      "last": 0.0087112,
+      "change24_pct": -1.814,
+      "volume_base_24h": 733262.18932195,
+      "volume_quote_24h": 6435.189053559117
+    },
+    {
+      "market": "ARX-EUR",
+      "last": 0.18571,
+      "change24_pct": 2.162,
+      "volume_base_24h": 58618.42071,
+      "volume_quote_24h": 10731.3373884244
+    },
+    {
+      "market": "ASTER-EUR",
+      "last": 0.62476,
+      "change24_pct": 1.051,
+      "volume_base_24h": 53946.50928,
+      "volume_quote_24h": 33678.3844316181
+    },
+    {
+      "market": "ASTR-EUR",
+      "last": 0.0053566,
+      "change24_pct": -1.243,
+      "volume_base_24h": 330965.77451213,
+      "volume_quote_24h": 1802.2101263894015
+    },
+    {
+      "market": "ATH-EUR",
+      "last": 0.005109,
+      "change24_pct": -2.248,
+      "volume_base_24h": 10181179.48378953,
+      "volume_quote_24h": 52620.79779767983
+    },
+    {
+      "market": "ATOM-EUR",
+      "last": 1.4315,
+      "change24_pct": -3.107,
+      "volume_base_24h": 34644.037004,
+      "volume_quote_24h": 50171.3182168873
+    },
+    {
+      "market": "AUCTION-EUR",
+      "last": 2.9576,
+      "change24_pct": -5.205,
+      "volume_base_24h": 3932.7247706,
+      "volume_quote_24h": 12163.405609193627
+    },
+    {
+      "market": "AUDIO-EUR",
+      "last": 0.012919,
+      "change24_pct": -1.412,
+      "volume_base_24h": 92271.03521584,
+      "volume_quote_24h": 1187.1101742361
+    },
+    {
+      "market": "AVA-EUR",
+      "last": 0.36877,
+      "change24_pct": 10.466,
+      "volume_base_24h": 562506.63102474,
+      "volume_quote_24h": 209628.52893448473
+    },
+    {
+      "market": "AVAX-EUR",
+      "last": 7.8552,
+      "change24_pct": -1.374,
+      "volume_base_24h": 94431.84468517,
+      "volume_quote_24h": 743932.2932973747
+    },
+    {
+      "market": "AVNT-EUR",
+      "last": 0.10137,
+      "change24_pct": -0.501,
+      "volume_base_24h": 488797.69844,
+      "volume_quote_24h": 50050.4909331844
+    },
+    {
+      "market": "AXIS-EUR",
+      "last": 0.224181,
+      "change24_pct": -3.986,
+      "volume_base_24h": 549841.3058,
+      "volume_quote_24h": 131357.9011443305
+    },
+    {
+      "market": "AXL-EUR",
+      "last": 0.042453,
+      "change24_pct": -5.542,
+      "volume_base_24h": 806378.14524258,
+      "volume_quote_24h": 36097.56088476771
+    },
+    {
+      "market": "AXS-EUR",
+      "last": 0.8256,
+      "change24_pct": -4.665,
+      "volume_base_24h": 43568.93899858,
+      "volume_quote_24h": 36485.85799552248
+    },
+    {
+      "market": "AZTEC-EUR",
+      "last": 0.014319,
+      "change24_pct": -4.952,
+      "volume_base_24h": 1670577.95791,
+      "volume_quote_24h": 24731.94591469531
+    },
+    {
+      "market": "BABY-EUR",
+      "last": 0.012208,
+      "change24_pct": -0.901,
+      "volume_base_24h": 5698842.64139124,
+      "volume_quote_24h": 68066.43540517638
+    },
+    {
+      "market": "BANANA-EUR",
+      "last": 2.9728,
+      "change24_pct": -0.505,
+      "volume_base_24h": 2714.23235467,
+      "volume_quote_24h": 8073.413902836435
+    },
+    {
+      "market": "BAND-EUR",
+      "last": 0.18154,
+      "change24_pct": -2.607,
+      "volume_base_24h": 63858.15606246,
+      "volume_quote_24h": 11888.230648372217
+    },
+    {
+      "market": "BAT-EUR",
+      "last": 0.13824,
+      "change24_pct": -3.193,
+      "volume_base_24h": 423843.34927336,
+      "volume_quote_24h": 59636.65867263901
+    },
+    {
+      "market": "BCH-EUR",
+      "last": 243.16,
+      "change24_pct": -1.71,
+      "volume_base_24h": 1311.01918867,
+      "volume_quote_24h": 320393.1999189984
+    },
+    {
+      "market": "BEAM-EUR",
+      "last": 0.0027,
+      "change24_pct": -6.11,
+      "volume_base_24h": 23035890.31,
+      "volume_quote_24h": 65716.2964290767
+    },
+    {
+      "market": "BEL-EUR",
+      "last": 0.09188,
+      "change24_pct": -5.205,
+      "volume_base_24h": 45927.70395411,
+      "volume_quote_24h": 4345.3831977003165
+    },
+    {
+      "market": "BICO-EUR",
+      "last": 0.013274,
+      "change24_pct": -5.751,
+      "volume_base_24h": 1972906.16359624,
+      "volume_quote_24h": 26995.70303278596
+    },
+    {
+      "market": "BIGTIME-EUR",
+      "last": 0.00622,
+      "change24_pct": -0.368,
+      "volume_base_24h": 14886156.70289647,
+      "volume_quote_24h": 93661.27520740966
+    },
+    {
+      "market": "BILL-EUR",
+      "last": 0.005411,
+      "change24_pct": 4.118,
+      "volume_base_24h": 73923075.8209,
+      "volume_quote_24h": 396037.3765067976
+    },
+    {
+      "market": "BIO-EUR",
+      "last": 0.019801,
+      "change24_pct": -4.213,
+      "volume_base_24h": 242849.33487475,
+      "volume_quote_24h": 4895.026564741287
+    },
+    {
+      "market": "BIRB-EUR",
+      "last": 0.06935,
+      "change24_pct": -29.249,
+      "volume_base_24h": 11996659.15475,
+      "volume_quote_24h": 1037149.0535803622
+    },
+    {
+      "market": "BLEND-EUR",
+      "last": 0.04433,
+      "change24_pct": -15.578,
+      "volume_base_24h": 1700534.08635,
+      "volume_quote_24h": 81401.0005365394
+    },
+    {
+      "market": "BLUR-EUR",
+      "last": 0.006803,
+      "change24_pct": -6.269,
+      "volume_base_24h": 1792193.98297919,
+      "volume_quote_24h": 12592.997852867087
+    },
+    {
+      "market": "BNB-EUR",
+      "last": 661.56,
+      "change24_pct": 1.271,
+      "volume_base_24h": 270.57212496,
+      "volume_quote_24h": 177599.0876274434
+    },
+    {
+      "market": "BNT-EUR",
+      "last": 0.26421,
+      "change24_pct": -1.557,
+      "volume_base_24h": 36302.00141626,
+      "volume_quote_24h": 9751.156533070476
+    },
+    {
+      "market": "BOB-EUR",
+      "last": 0.0038916,
+      "change24_pct": -0.486,
+      "volume_base_24h": 1448333.7137,
+      "volume_quote_24h": 5634.08242699641
+    },
+    {
+      "market": "BOME-EUR",
+      "last": 0.00054286,
+      "change24_pct": -3.457,
+      "volume_base_24h": 37893995.442933,
+      "volume_quote_24h": 20708.533196294084
+    },
+    {
+      "market": "BONK-EUR",
+      "last": 2.6925e-06,
+      "change24_pct": -1.207,
+      "volume_base_24h": 54790663024.0,
+      "volume_quote_24h": 149394.6873662502
+    },
+    {
+      "market": "BRETT-EUR",
+      "last": 0.00415,
+      "change24_pct": -2.926,
+      "volume_base_24h": 2723191.4710302,
+      "volume_quote_24h": 11328.74105127413
+    },
+    {
+      "market": "BREV-EUR",
+      "last": 0.06953,
+      "change24_pct": -1.432,
+      "volume_base_24h": 229700.6279,
+      "volume_quote_24h": 16540.4394144825
+    },
+    {
+      "market": "BTC-EUR",
+      "last": 71701.0,
+      "change24_pct": -0.307,
+      "volume_base_24h": 422.16387417,
+      "volume_quote_24h": 30183690.45223669
+    },
+    {
+      "market": "BTT-EUR",
+      "last": 3.3244e-07,
+      "change24_pct": 2.145,
+      "volume_base_24h": 8907682248.0,
+      "volume_quote_24h": 2935.57475889033
+    },
+    {
+      "market": "C-EUR",
+      "last": 0.071431,
+      "change24_pct": -3.87,
+      "volume_base_24h": 354595.0075,
+      "volume_quote_24h": 25869.5927388563
+    },
+    {
+      "market": "C98-EUR",
+      "last": 0.012623,
+      "change24_pct": -3.744,
+      "volume_base_24h": 1975859.75574292,
+      "volume_quote_24h": 25376.778940355573
+    },
+    {
+      "market": "CAKE-EUR",
+      "last": 1.8309,
+      "change24_pct": -2.133,
+      "volume_base_24h": 18100.56740714,
+      "volume_quote_24h": 33261.51936197118
+    },
+    {
+      "market": "CAP-EUR",
+      "last": 0.087438,
+      "change24_pct": 40.388,
+      "volume_base_24h": 18135319.347,
+      "volume_quote_24h": 1406531.9313994728
+    },
+    {
+      "market": "CARV-EUR",
+      "last": 0.032157,
+      "change24_pct": 0.324,
+      "volume_base_24h": 1454071.76926,
+      "volume_quote_24h": 47131.28908387747
+    },
+    {
+      "market": "CAT-EUR",
+      "last": 1.5395e-06,
+      "change24_pct": -0.952,
+      "volume_base_24h": 426261149.0,
+      "volume_quote_24h": 649.3878629841
+    },
+    {
+      "market": "CATI-EUR",
+      "last": 0.04103,
+      "change24_pct": -2.726,
+      "volume_base_24h": 785998.38251373,
+      "volume_quote_24h": 32857.95885612258
+    },
+    {
+      "market": "CC-EUR",
+      "last": 0.08877,
+      "change24_pct": -1.933,
+      "volume_base_24h": 943115.79989,
+      "volume_quote_24h": 84332.6296744553
+    },
+    {
+      "market": "CELO-EUR",
+      "last": 0.067756,
+      "change24_pct": -3.035,
+      "volume_base_24h": 12982.0953837,
+      "volume_quote_24h": 894.311839266623
+    },
+    {
+      "market": "CELR-EUR",
+      "last": 0.002146,
+      "change24_pct": -0.505,
+      "volume_base_24h": 735269.073,
+      "volume_quote_24h": 1616.1042215654
+    },
+    {
+      "market": "CETUS-EUR",
+      "last": 0.018922,
+      "change24_pct": -2.313,
+      "volume_base_24h": 78895.1733519,
+      "volume_quote_24h": 1539.7526446486493
+    },
+    {
+      "market": "CFG-EUR",
+      "last": 0.090389,
+      "change24_pct": -5.547,
+      "volume_base_24h": 815888.1646132,
+      "volume_quote_24h": 75051.455151699
+    },
+    {
+      "market": "CHILLGUY-EUR",
+      "last": 0.0084623,
+      "change24_pct": -2.388,
+      "volume_base_24h": 3863098.06109296,
+      "volume_quote_24h": 33149.57370778986
+    },
+    {
+      "market": "CHIP-EUR",
+      "last": 0.040092,
+      "change24_pct": 5.331,
+      "volume_base_24h": 1206793.1462,
+      "volume_quote_24h": 46790.9052277115
+    },
+    {
+      "market": "CHR-EUR",
+      "last": 0.015154,
+      "change24_pct": -4.794,
+      "volume_base_24h": 129391.354526,
+      "volume_quote_24h": 2008.152739495646
+    },
+    {
+      "market": "CHZ-EUR",
+      "last": 0.011341,
+      "change24_pct": -2.919,
+      "volume_base_24h": 936254.8779889,
+      "volume_quote_24h": 10670.41144760548
+    },
+    {
+      "market": "CNPY-EUR",
+      "last": 0.207,
+      "change24_pct": 13.73,
+      "volume_base_24h": 566534.00464,
+      "volume_quote_24h": 113031.349592275
+    },
+    {
+      "market": "COMP-EUR",
+      "last": 20.433,
+      "change24_pct": -2.709,
+      "volume_base_24h": 1405.54441,
+      "volume_quote_24h": 29415.64757512857
+    },
+    {
+      "market": "COTI-EUR",
+      "last": 0.009194,
+      "change24_pct": -5.934,
+      "volume_base_24h": 3298335.65308439,
+      "volume_quote_24h": 31251.891852898832
+    },
+    {
+      "market": "COW-EUR",
+      "last": 0.11218,
+      "change24_pct": -3.601,
+      "volume_base_24h": 32916.75792798,
+      "volume_quote_24h": 3767.5883352163996
+    },
+    {
+      "market": "CPOOL-EUR",
+      "last": 0.024696,
+      "change24_pct": -10.45,
+      "volume_base_24h": 1519322.4461515,
+      "volume_quote_24h": 38976.000631891045
+    },
+    {
+      "market": "CRO-EUR",
+      "last": 0.048766,
+      "change24_pct": -0.81,
+      "volume_base_24h": 672762.15497545,
+      "volume_quote_24h": 33030.53390553888
+    },
+    {
+      "market": "CROSS-EUR",
+      "last": 0.090223,
+      "change24_pct": -0.823,
+      "volume_base_24h": 40292.20402,
+      "volume_quote_24h": 3659.26491870277
+    },
+    {
+      "market": "CRV-EUR",
+      "last": 0.30446,
+      "change24_pct": -3.447,
+      "volume_base_24h": 218148.33300523,
+      "volume_quote_24h": 68313.14967080439
+    },
+    {
+      "market": "CSPR-EUR",
+      "last": 0.0019272,
+      "change24_pct": 1.469,
+      "volume_base_24h": 41214919.755,
+      "volume_quote_24h": 79356.0907204392
+    },
+    {
+      "market": "CT-EUR",
+      "last": 0.14073,
+      "change24_pct": -10.947,
+      "volume_base_24h": 2780767.10001,
+      "volume_quote_24h": 411817.6923266738
+    },
+    {
+      "market": "CTC-EUR",
+      "last": 0.0779,
+      "change24_pct": -1.84,
+      "volume_base_24h": 28887.01265166,
+      "volume_quote_24h": 2335.34404328147
+    },
+    {
+      "market": "CTK-EUR",
+      "last": 0.09328,
+      "change24_pct": -8.333,
+      "volume_base_24h": 430792.69505,
+      "volume_quote_24h": 41714.86432419297
+    },
+    {
+      "market": "CTR-EUR",
+      "last": 0.015243,
+      "change24_pct": 1.303,
+      "volume_base_24h": 834148.3055,
+      "volume_quote_24h": 12787.9240112102
+    },
+    {
+      "market": "CTSI-EUR",
+      "last": 0.02464,
+      "change24_pct": -1.353,
+      "volume_base_24h": 264969.38692551,
+      "volume_quote_24h": 6541.263435779047
+    },
+    {
+      "market": "CVC-EUR",
+      "last": 0.020911,
+      "change24_pct": 1.122,
+      "volume_base_24h": 10193488.4537903,
+      "volume_quote_24h": 213869.35731892934
+    },
+    {
+      "market": "CVX-EUR",
+      "last": 2.1564,
+      "change24_pct": 0.274,
+      "volume_base_24h": 63107.94468794,
+      "volume_quote_24h": 136766.71924366278
+    },
+    {
+      "market": "CYBER-EUR",
+      "last": 0.26726,
+      "change24_pct": -5.411,
+      "volume_base_24h": 70234.3127941,
+      "volume_quote_24h": 19699.749951653976
+    },
+    {
+      "market": "DATAIP-EUR",
+      "last": 0.1293,
+      "change24_pct": -6.44,
+      "volume_base_24h": 1443307.13009437,
+      "volume_quote_24h": 198668.36507550362
+    },
+    {
+      "market": "DBR-EUR",
+      "last": 0.014619,
+      "change24_pct": -1.436,
+      "volume_base_24h": 587090.6762922,
+      "volume_quote_24h": 8676.969781005973
+    },
+    {
+      "market": "DEEP-EUR",
+      "last": 0.014408,
+      "change24_pct": -7.249,
+      "volume_base_24h": 735832.5009199,
+      "volume_quote_24h": 10867.965406564765
+    },
+    {
+      "market": "DEGEN-EUR",
+      "last": 0.0008066,
+      "change24_pct": -2.812,
+      "volume_base_24h": 1292018.07,
+      "volume_quote_24h": 1061.34989001343
+    },
+    {
+      "market": "DGB-EUR",
+      "last": 0.0030257,
+      "change24_pct": 0.91,
+      "volume_base_24h": 6279437.26,
+      "volume_quote_24h": 19045.5077094112
+    },
+    {
+      "market": "DIA-EUR",
+      "last": 0.12723,
+      "change24_pct": -3.89,
+      "volume_base_24h": 177931.69865939,
+      "volume_quote_24h": 23074.9164913667
+    },
+    {
+      "market": "DODO-EUR",
+      "last": 0.020246,
+      "change24_pct": 2.699,
+      "volume_base_24h": 7572293.30140817,
+      "volume_quote_24h": 151735.47873286388
+    },
+    {
+      "market": "DOGE-EUR",
+      "last": 0.068306,
+      "change24_pct": -1.289,
+      "volume_base_24h": 6310200.94880985,
+      "volume_quote_24h": 430918.5457272799
+    },
+    {
+      "market": "DOGS-EUR",
+      "last": 3.1878e-05,
+      "change24_pct": -0.744,
+      "volume_base_24h": 219330725.32,
+      "volume_quote_24h": 6908.16354889937
+    },
+    {
+      "market": "DOS-EUR",
+      "last": 0.22823,
+      "change24_pct": 3.51,
+      "volume_base_24h": 4168493.07251,
+      "volume_quote_24h": 902772.7327280921
+    },
+    {
+      "market": "DOT-EUR",
+      "last": 0.9093,
+      "change24_pct": -4.143,
+      "volume_base_24h": 458096.54533474,
+      "volume_quote_24h": 424113.25595922925
+    },
+    {
+      "market": "DRIFT-EUR",
+      "last": 0.011967,
+      "change24_pct": -4.011,
+      "volume_base_24h": 1502256.64894029,
+      "volume_quote_24h": 18258.93340735274
+    },
+    {
+      "market": "DRV-EUR",
+      "last": 0.316,
+      "change24_pct": -4.785,
+      "volume_base_24h": 128931.41485,
+      "volume_quote_24h": 42336.7657118532
+    },
+    {
+      "market": "DUSK-EUR",
+      "last": 0.096639,
+      "change24_pct": -3.761,
+      "volume_base_24h": 262108.20144751,
+      "volume_quote_24h": 25677.45276680338
+    },
+    {
+      "market": "DYDX-EUR",
+      "last": 0.09388,
+      "change24_pct": -4.748,
+      "volume_base_24h": 65111.53410094,
+      "volume_quote_24h": 6182.661970586803
+    },
+    {
+      "market": "DYM-EUR",
+      "last": 0.01572,
+      "change24_pct": -2.897,
+      "volume_base_24h": 812575.04360655,
+      "volume_quote_24h": 13136.072253392982
+    },
+    {
+      "market": "EDEN-EUR",
+      "last": 0.049826,
+      "change24_pct": -0.678,
+      "volume_base_24h": 976121.7155,
+      "volume_quote_24h": 49618.1706200057
+    },
+    {
+      "market": "EDGE-EUR",
+      "last": 0.074528,
+      "change24_pct": -9.721,
+      "volume_base_24h": 387068.43345,
+      "volume_quote_24h": 33886.11906948366
+    },
+    {
+      "market": "EDU-EUR",
+      "last": 0.05329,
+      "change24_pct": -6.607,
+      "volume_base_24h": 111905.54513975,
+      "volume_quote_24h": 6207.905218666183
+    },
+    {
+      "market": "EGLD-EUR",
+      "last": 2.8827,
+      "change24_pct": -3.913,
+      "volume_base_24h": 7247.57176618,
+      "volume_quote_24h": 21377.335256740706
+    },
+    {
+      "market": "EIGEN-EUR",
+      "last": 0.17554,
+      "change24_pct": -4.639,
+      "volume_base_24h": 230275.16885693,
+      "volume_quote_24h": 40980.88585525926
+    },
+    {
+      "market": "ELSA-EUR",
+      "last": 0.069631,
+      "change24_pct": -2.272,
+      "volume_base_24h": 4282682.12843,
+      "volume_quote_24h": 286267.9878249371
+    },
+    {
+      "market": "ENA-EUR",
+      "last": 0.17147,
+      "change24_pct": 1.162,
+      "volume_base_24h": 3985168.87635705,
+      "volume_quote_24h": 677773.8439096911
+    },
+    {
+      "market": "ENJ-EUR",
+      "last": 0.021844,
+      "change24_pct": -4.524,
+      "volume_base_24h": 290993.21509718,
+      "volume_quote_24h": 6431.458524624814
+    },
+    {
+      "market": "ENS-EUR",
+      "last": 4.6568,
+      "change24_pct": -1.591,
+      "volume_base_24h": 2159.06649997,
+      "volume_quote_24h": 10144.750984485448
+    },
+    {
+      "market": "ENSO-EUR",
+      "last": 0.5563,
+      "change24_pct": -6.927,
+      "volume_base_24h": 32640.668428,
+      "volume_quote_24h": 18747.3468175601
+    },
+    {
+      "market": "EPIC-EUR",
+      "last": 0.11988,
+      "change24_pct": 2.937,
+      "volume_base_24h": 6598265.06663977,
+      "volume_quote_24h": 894220.6253357118
+    },
+    {
+      "market": "ESP-EUR",
+      "last": 0.074298,
+      "change24_pct": -3.862,
+      "volume_base_24h": 489053.41765,
+      "volume_quote_24h": 37470.90193897339
+    },
+    {
+      "market": "ETC-EUR",
+      "last": 6.7016,
+      "change24_pct": -1.386,
+      "volume_base_24h": 2030.52699902,
+      "volume_quote_24h": 13652.04031895095
+    },
+    {
+      "market": "ETH-EUR",
+      "last": 2078.36,
+      "change24_pct": -1.562,
+      "volume_base_24h": 5585.34370609,
+      "volume_quote_24h": 11601710.527812354
+    },
+    {
+      "market": "ETHFI-EUR",
+      "last": 0.53984,
+      "change24_pct": -3.847,
+      "volume_base_24h": 86355.47000263,
+      "volume_quote_24h": 47289.930622110856
+    },
+    {
+      "market": "EUL-EUR",
+      "last": 1.0648,
+      "change24_pct": -1.817,
+      "volume_base_24h": 18243.487479,
+      "volume_quote_24h": 19543.49113870205
+    },
+    {
+      "market": "EURCV-EUR",
+      "last": 0.9998,
+      "change24_pct": -0.03,
+      "volume_base_24h": 265.721699,
+      "volume_quote_24h": 265.7093889652
+    },
+    {
+      "market": "F-EUR",
+      "last": 0.0026071,
+      "change24_pct": -12.059,
+      "volume_base_24h": 85308402.03649284,
+      "volume_quote_24h": 251137.29535979018
+    },
+    {
+      "market": "FARTCOIN-EUR",
+      "last": 0.10964,
+      "change24_pct": -7.765,
+      "volume_base_24h": 3673730.78832,
+      "volume_quote_24h": 408079.6810314487
+    },
+    {
+      "market": "FET-EUR",
+      "last": 0.15451,
+      "change24_pct": -1.171,
+      "volume_base_24h": 4740021.5992266,
+      "volume_quote_24h": 736595.8220518769
+    },
+    {
+      "market": "FIDA-EUR",
+      "last": 0.015444,
+      "change24_pct": -0.11,
+      "volume_base_24h": 19928.492198,
+      "volume_quote_24h": 309.472243624799
+    },
+    {
+      "market": "FIL-EUR",
+      "last": 0.8129,
+      "change24_pct": -3.463,
+      "volume_base_24h": 244559.72962931,
+      "volume_quote_24h": 203065.67906574768
+    },
+    {
+      "market": "FLOCK-EUR",
+      "last": 0.036195,
+      "change24_pct": -6.075,
+      "volume_base_24h": 124671.76495,
+      "volume_quote_24h": 4621.73801674616
+    },
+    {
+      "market": "FLOKI-EUR",
+      "last": 2.0328e-05,
+      "change24_pct": -3.14,
+      "volume_base_24h": 1585512541.0,
+      "volume_quote_24h": 32497.226300793
+    },
+    {
+      "market": "FLR-EUR",
+      "last": 0.0054242,
+      "change24_pct": 0.457,
+      "volume_base_24h": 3487013.19854034,
+      "volume_quote_24h": 18944.803434163943
+    },
+    {
+      "market": "FLUID-EUR",
+      "last": 1.9407,
+      "change24_pct": -2.187,
+      "volume_base_24h": 15481.408072,
+      "volume_quote_24h": 29937.7592520107
+    },
+    {
+      "market": "FLUX-EUR",
+      "last": 0.056252,
+      "change24_pct": -3.949,
+      "volume_base_24h": 40466.2552571,
+      "volume_quote_24h": 2310.6531759842214
+    },
+    {
+      "market": "FOLD-EUR",
+      "last": 0.042204,
+      "change24_pct": -7.743,
+      "volume_base_24h": 297477.4063,
+      "volume_quote_24h": 13321.391881875
+    },
+    {
+      "market": "FORM-EUR",
+      "last": 0.1952,
+      "change24_pct": -2.376,
+      "volume_base_24h": 57891.07463051,
+      "volume_quote_24h": 11366.817546953744
+    },
+    {
+      "market": "FRAX-EUR",
+      "last": 0.22997,
+      "change24_pct": -1.856,
+      "volume_base_24h": 8851.87686,
+      "volume_quote_24h": 2033.5245691954
+    },
+    {
+      "market": "FTT-EUR",
+      "last": 0.21666,
+      "change24_pct": 0.306,
+      "volume_base_24h": 16278.19776072,
+      "volume_quote_24h": 3497.6951935828197
+    },
+    {
+      "market": "FUEL-EUR",
+      "last": 0.0007016,
+      "change24_pct": -1.127,
+      "volume_base_24h": 3639689.86,
+      "volume_quote_24h": 2567.9511369819
+    },
+    {
+      "market": "FUN-EUR",
+      "last": 0.013714,
+      "change24_pct": -4.704,
+      "volume_base_24h": 2040477.57243,
+      "volume_quote_24h": 28653.51252565622
+    },
+    {
+      "market": "G-EUR",
+      "last": 0.0032417,
+      "change24_pct": -2.824,
+      "volume_base_24h": 2668606.3804773,
+      "volume_quote_24h": 8879.23640873383
+    },
+    {
+      "market": "GALA-EUR",
+      "last": 0.0015307,
+      "change24_pct": -4.164,
+      "volume_base_24h": 6260002.08541041,
+      "volume_quote_24h": 9728.4179569969
+    },
+    {
+      "market": "GAS-EUR",
+      "last": 1.0651,
+      "change24_pct": -0.662,
+      "volume_base_24h": 5097.49624952,
+      "volume_quote_24h": 5403.589923866468
+    },
+    {
+      "market": "GIGA-EUR",
+      "last": 0.0016173,
+      "change24_pct": -0.967,
+      "volume_base_24h": 1035592.17295355,
+      "volume_quote_24h": 1696.12118468904
+    },
+    {
+      "market": "GLM-EUR",
+      "last": 0.09523,
+      "change24_pct": -1.581,
+      "volume_base_24h": 337113.10761637,
+      "volume_quote_24h": 33686.39068617872
+    },
+    {
+      "market": "GLMR-EUR",
+      "last": 0.007357,
+      "change24_pct": -4.997,
+      "volume_base_24h": 1785920.87261875,
+      "volume_quote_24h": 13409.20452416304
+    },
+    {
+      "market": "GMT-EUR",
+      "last": 0.006119,
+      "change24_pct": -2.965,
+      "volume_base_24h": 1934400.90448238,
+      "volume_quote_24h": 12079.004589586038
+    },
+    {
+      "market": "GMX-EUR",
+      "last": 7.5099,
+      "change24_pct": -1.35,
+      "volume_base_24h": 979.72817334,
+      "volume_quote_24h": 7366.823973093426
+    },
+    {
+      "market": "GNO-EUR",
+      "last": 99.88,
+      "change24_pct": -0.468,
+      "volume_base_24h": 11.15298447,
+      "volume_quote_24h": 1113.8232884539
+    },
+    {
+      "market": "GNS-EUR",
+      "last": 0.35464,
+      "change24_pct": -2.462,
+      "volume_base_24h": 152189.14811894,
+      "volume_quote_24h": 60201.567547551494
+    },
+    {
+      "market": "GOAT-EUR",
+      "last": 0.012475,
+      "change24_pct": -2.6,
+      "volume_base_24h": 2030562.877309,
+      "volume_quote_24h": 25585.74151488243
+    },
+    {
+      "market": "GRAM-EUR",
+      "last": 1.1189,
+      "change24_pct": 0.26,
+      "volume_base_24h": 80298.32251,
+      "volume_quote_24h": 88893.1793099948
+    },
+    {
+      "market": "GRASS-EUR",
+      "last": 0.59379,
+      "change24_pct": 3.046,
+      "volume_base_24h": 315710.6564839,
+      "volume_quote_24h": 183785.40237930487
+    },
+    {
+      "market": "GROVE-EUR",
+      "last": 0.004332,
+      "change24_pct": 4.11,
+      "volume_base_24h": 4277247.9134,
+      "volume_quote_24h": 18521.412355102
+    },
+    {
+      "market": "GRT-EUR",
+      "last": 0.019976,
+      "change24_pct": -2.532,
+      "volume_base_24h": 1159124.04563088,
+      "volume_quote_24h": 23322.65810753059
+    },
+    {
+      "market": "GTC-EUR",
+      "last": 0.23213,
+      "change24_pct": 3.322,
+      "volume_base_24h": 1122193.65512219,
+      "volume_quote_24h": 262688.39529520203
+    },
+    {
+      "market": "GWEI-EUR",
+      "last": 0.018627,
+      "change24_pct": -0.342,
+      "volume_base_24h": 835068.3974,
+      "volume_quote_24h": 15589.8460372211
+    },
+    {
+      "market": "HAEDAL-EUR",
+      "last": 0.017317,
+      "change24_pct": -2.031,
+      "volume_base_24h": 1007680.18039,
+      "volume_quote_24h": 17731.11933674768
+    },
+    {
+      "market": "HBAR-EUR",
+      "last": 0.068328,
+      "change24_pct": -0.295,
+      "volume_base_24h": 11251149.34823263,
+      "volume_quote_24h": 770737.1653697225
+    },
+    {
+      "market": "HEI-EUR",
+      "last": 0.092788,
+      "change24_pct": -4.668,
+      "volume_base_24h": 975716.84425487,
+      "volume_quote_24h": 93438.39250779274
+    },
+    {
+      "market": "HFT-EUR",
+      "last": 0.004836,
+      "change24_pct": -2.165,
+      "volume_base_24h": 493148.59865435,
+      "volume_quote_24h": 2403.98722751816
+    },
+    {
+      "market": "HMSTR-EUR",
+      "last": 0.00012459,
+      "change24_pct": -0.852,
+      "volume_base_24h": 6412726.192,
+      "volume_quote_24h": 807.95291645795
+    },
+    {
+      "market": "HNT-EUR",
+      "last": 0.34927,
+      "change24_pct": -1.28,
+      "volume_base_24h": 96550.66269071,
+      "volume_quote_24h": 33919.228848239916
+    },
+    {
+      "market": "HOME-EUR",
+      "last": 0.004461,
+      "change24_pct": -4.311,
+      "volume_base_24h": 9431448.1727,
+      "volume_quote_24h": 43461.2355201156
+    },
+    {
+      "market": "HOT-EUR",
+      "last": 0.00030521,
+      "change24_pct": -2.904,
+      "volume_base_24h": 59245884.34,
+      "volume_quote_24h": 18140.74728596
+    },
+    {
+      "market": "HUMA-EUR",
+      "last": 0.021,
+      "change24_pct": -11.002,
+      "volume_base_24h": 974193.6269,
+      "volume_quote_24h": 21554.8571436166
+    },
+    {
+      "market": "HYPE-EUR",
+      "last": 67.723,
+      "change24_pct": 0.373,
+      "volume_base_24h": 45764.631454,
+      "volume_quote_24h": 3089608.6324334503
+    },
+    {
+      "market": "ICNT-EUR",
+      "last": 0.17243,
+      "change24_pct": -1.967,
+      "volume_base_24h": 2479901.19319,
+      "volume_quote_24h": 426994.0346615734
+    },
+    {
+      "market": "ICP-EUR",
+      "last": 2.3209,
+      "change24_pct": -2.842,
+      "volume_base_24h": 72342.1677006,
+      "volume_quote_24h": 168939.78443514535
+    },
+    {
+      "market": "ID-EUR",
+      "last": 0.027462,
+      "change24_pct": -3.218,
+      "volume_base_24h": 1275167.11737055,
+      "volume_quote_24h": 36494.94315649724
+    },
+    {
+      "market": "IKA-EUR",
+      "last": 0.0014315,
+      "change24_pct": -0.348,
+      "volume_base_24h": 15448887.1645,
+      "volume_quote_24h": 23010.64769974675
+    },
+    {
+      "market": "ILV-EUR",
+      "last": 2.7391,
+      "change24_pct": -3.144,
+      "volume_base_24h": 22878.4033179,
+      "volume_quote_24h": 62751.14048738061
+    },
+    {
+      "market": "IMU-EUR",
+      "last": 0.0014972,
+      "change24_pct": -2.15,
+      "volume_base_24h": 13437697.133,
+      "volume_quote_24h": 20911.4339619742
+    },
+    {
+      "market": "IMX-EUR",
+      "last": 0.12257,
+      "change24_pct": -3.42,
+      "volume_base_24h": 173947.68797894,
+      "volume_quote_24h": 21646.987443774593
+    },
+    {
+      "market": "INIT-EUR",
+      "last": 0.133485,
+      "change24_pct": 0.601,
+      "volume_base_24h": 1409404.76976,
+      "volume_quote_24h": 191868.85595812867
+    },
+    {
+      "market": "INJ-EUR",
+      "last": 6.7487,
+      "change24_pct": -1.19,
+      "volume_base_24h": 71914.97700006,
+      "volume_quote_24h": 485644.8219381721
+    },
+    {
+      "market": "INX-EUR",
+      "last": 0.003975,
+      "change24_pct": -0.025,
+      "volume_base_24h": 32376523.8804,
+      "volume_quote_24h": 127278.6819710391
+    },
+    {
+      "market": "IO-EUR",
+      "last": 0.12938,
+      "change24_pct": -2.656,
+      "volume_base_24h": 114887.40106928,
+      "volume_quote_24h": 15091.549617206587
+    },
+    {
+      "market": "IOST-EUR",
+      "last": 0.0006825,
+      "change24_pct": 0.397,
+      "volume_base_24h": 653693833.884,
+      "volume_quote_24h": 468911.6438994906
+    },
+    {
+      "market": "IQ-EUR",
+      "last": 0.000728,
+      "change24_pct": 1.633,
+      "volume_base_24h": 30238701.948,
+      "volume_quote_24h": 22855.8286514924
+    },
+    {
+      "market": "IRYS-EUR",
+      "last": 0.030668,
+      "change24_pct": -45.443,
+      "volume_base_24h": 75463218.8068,
+      "volume_quote_24h": 3189965.141000195
+    },
+    {
+      "market": "JASMY-EUR",
+      "last": 0.0038689,
+      "change24_pct": -4.178,
+      "volume_base_24h": 16050756.821,
+      "volume_quote_24h": 62902.2123913804
+    },
+    {
+      "market": "JTO-EUR",
+      "last": 0.37244,
+      "change24_pct": -3.303,
+      "volume_base_24h": 93454.4094,
+      "volume_quote_24h": 35490.765206506
+    },
+    {
+      "market": "JUP-EUR",
+      "last": 0.25048,
+      "change24_pct": -3.754,
+      "volume_base_24h": 746539.121,
+      "volume_quote_24h": 190524.09659901
+    },
+    {
+      "market": "KAIA-EUR",
+      "last": 0.031919,
+      "change24_pct": -1.201,
+      "volume_base_24h": 4879964.17014304,
+      "volume_quote_24h": 159808.5752749495
+    },
+    {
+      "market": "KAITO-EUR",
+      "last": 0.21941,
+      "change24_pct": -4.163,
+      "volume_base_24h": 125537.89276871,
+      "volume_quote_24h": 28011.241234528265
+    },
+    {
+      "market": "KAS-EUR",
+      "last": 0.031899,
+      "change24_pct": 0.129,
+      "volume_base_24h": 3081880.82840587,
+      "volume_quote_24h": 97783.78157062146
+    },
+    {
+      "market": "KAT-EUR",
+      "last": 0.003591,
+      "change24_pct": -35.379,
+      "volume_base_24h": 144311148.1608,
+      "volume_quote_24h": 594530.2094227321
+    },
+    {
+      "market": "KERNEL-EUR",
+      "last": 0.042712,
+      "change24_pct": -7.186,
+      "volume_base_24h": 495282.53186,
+      "volume_quote_24h": 22386.755937557205
+    },
+    {
+      "market": "KITE-EUR",
+      "last": 0.09901,
+      "change24_pct": -2.969,
+      "volume_base_24h": 57591.2355,
+      "volume_quote_24h": 5838.756025076
+    },
+    {
+      "market": "KMNO-EUR",
+      "last": 0.035649,
+      "change24_pct": -1.26,
+      "volume_base_24h": 3630096.43643282,
+      "volume_quote_24h": 131043.72027714072
+    },
+    {
+      "market": "KNC-EUR",
+      "last": 0.10822,
+      "change24_pct": -2.161,
+      "volume_base_24h": 25201.91619774,
+      "volume_quote_24h": 2737.1953479458457
+    },
+    {
+      "market": "KSM-EUR",
+      "last": 3.3178,
+      "change24_pct": -4.628,
+      "volume_base_24h": 2366.69044202,
+      "volume_quote_24h": 8070.903354146464
+    },
+    {
+      "market": "LAPTOP-EUR",
+      "last": 0.05413,
+      "change24_pct": -5.218,
+      "volume_base_24h": 382769.9053,
+      "volume_quote_24h": 21441.9726516883
+    },
+    {
+      "market": "LAYER-EUR",
+      "last": 0.058375,
+      "change24_pct": -3.229,
+      "volume_base_24h": 115081.24853,
+      "volume_quote_24h": 6877.66976766782
+    },
+    {
+      "market": "LDO-EUR",
+      "last": 0.32125,
+      "change24_pct": -3.279,
+      "volume_base_24h": 71564.32345038,
+      "volume_quote_24h": 23250.593922960794
+    },
+    {
+      "market": "LIGHTER-EUR",
+      "last": 2.8454,
+      "change24_pct": 2.019,
+      "volume_base_24h": 17139.659014,
+      "volume_quote_24h": 48593.7476579434
+    },
+    {
+      "market": "LINEA-EUR",
+      "last": 0.002234,
+      "change24_pct": -3.303,
+      "volume_base_24h": 5813711.5296,
+      "volume_quote_24h": 13415.62581881605
+    },
+    {
+      "market": "LINK-EUR",
+      "last": 10.1248,
+      "change24_pct": -2.243,
+      "volume_base_24h": 145902.21378011,
+      "volume_quote_24h": 1488465.8107758032
+    },
+    {
+      "market": "LISTA-EUR",
+      "last": 0.070526,
+      "change24_pct": 2.269,
+      "volume_base_24h": 382764.94953973,
+      "volume_quote_24h": 27226.174439461363
+    },
+    {
+      "market": "LMWR-EUR",
+      "last": 0.008753,
+      "change24_pct": -0.205,
+      "volume_base_24h": 929298.14378989,
+      "volume_quote_24h": 7975.259061491183
+    },
+    {
+      "market": "LPT-EUR",
+      "last": 1.308,
+      "change24_pct": -2.967,
+      "volume_base_24h": 163890.13509364,
+      "volume_quote_24h": 216559.5169527738
+    },
+    {
+      "market": "LQTY-EUR",
+      "last": 0.17358,
+      "change24_pct": -4.6,
+      "volume_base_24h": 11064.39753591,
+      "volume_quote_24h": 1946.7727642585805
+    },
+    {
+      "market": "LRC-EUR",
+      "last": 0.00753,
+      "change24_pct": 3.434,
+      "volume_base_24h": 10494177.30620748,
+      "volume_quote_24h": 82415.66875537005
+    },
+    {
+      "market": "LSK-EUR",
+      "last": 0.14629,
+      "change24_pct": -5.154,
+      "volume_base_24h": 656420.54375577,
+      "volume_quote_24h": 101611.78017164092
+    },
+    {
+      "market": "LTC-EUR",
+      "last": 50.177,
+      "change24_pct": 0.012,
+      "volume_base_24h": 4847.00480147,
+      "volume_quote_24h": 242534.80413568026
+    },
+    {
+      "market": "LUMIA-EUR",
+      "last": 0.071345,
+      "change24_pct": 5.85,
+      "volume_base_24h": 2388028.8415066,
+      "volume_quote_24h": 165128.39446577377
+    },
+    {
+      "market": "LUNA-EUR",
+      "last": 3.9821e-05,
+      "change24_pct": -0.99,
+      "volume_base_24h": 760033785.650254,
+      "volume_quote_24h": 30243.61386792376
+    },
+    {
+      "market": "LUNA2-EUR",
+      "last": 0.036772,
+      "change24_pct": -4.908,
+      "volume_base_24h": 672042.424658,
+      "volume_quote_24h": 25173.39297566284
+    },
+    {
+      "market": "MAGIC-EUR",
+      "last": 0.074897,
+      "change24_pct": -3.573,
+      "volume_base_24h": 62983.38865053,
+      "volume_quote_24h": 4814.939252460017
+    },
+    {
+      "market": "MANA-EUR",
+      "last": 0.069409,
+      "change24_pct": -2.832,
+      "volume_base_24h": 100254.91917781,
+      "volume_quote_24h": 7031.262169210713
+    },
+    {
+      "market": "MANTA-EUR",
+      "last": 0.054935,
+      "change24_pct": -4.691,
+      "volume_base_24h": 128545.3806,
+      "volume_quote_24h": 7121.5176061964
+    },
+    {
+      "market": "MANTRA-EUR",
+      "last": 0.003329,
+      "change24_pct": -2.86,
+      "volume_base_24h": 15125671.0759,
+      "volume_quote_24h": 52249.5499672964
+    },
+    {
+      "market": "MASK-EUR",
+      "last": 0.3556,
+      "change24_pct": -0.953,
+      "volume_base_24h": 34785.5287639,
+      "volume_quote_24h": 12549.608266904072
+    },
+    {
+      "market": "MAV-EUR",
+      "last": 0.008317,
+      "change24_pct": -1.655,
+      "volume_base_24h": 127176.75680466,
+      "volume_quote_24h": 1078.6894558317697
+    },
+    {
+      "market": "MAVIA-EUR",
+      "last": 0.022424,
+      "change24_pct": -3.76,
+      "volume_base_24h": 2027338.55215085,
+      "volume_quote_24h": 46607.37280953824
+    },
+    {
+      "market": "ME-EUR",
+      "last": 0.0535,
+      "change24_pct": -8.186,
+      "volume_base_24h": 174014.66299195,
+      "volume_quote_24h": 9953.49083080227
+    },
+    {
+      "market": "MEGA-EUR",
+      "last": 0.04052,
+      "change24_pct": 0.922,
+      "volume_base_24h": 1531368.61838,
+      "volume_quote_24h": 61939.6040241558
+    },
+    {
+      "market": "MEME-EUR",
+      "last": 0.00041239,
+      "change24_pct": -1.046,
+      "volume_base_24h": 17603278.91,
+      "volume_quote_24h": 7286.2054455607
+    },
+    {
+      "market": "MERL-EUR",
+      "last": 0.02312,
+      "change24_pct": -4.652,
+      "volume_base_24h": 2182422.8099995,
+      "volume_quote_24h": 52316.08591433102
+    },
+    {
+      "market": "MET-EUR",
+      "last": 0.26368,
+      "change24_pct": -3.13,
+      "volume_base_24h": 136830.99221,
+      "volume_quote_24h": 36512.1831836197
+    },
+    {
+      "market": "METIS-EUR",
+      "last": 3.0117,
+      "change24_pct": -5.811,
+      "volume_base_24h": 28805.37901397,
+      "volume_quote_24h": 89354.69469760188
+    },
+    {
+      "market": "MEW-EUR",
+      "last": 0.00041402,
+      "change24_pct": -0.32,
+      "volume_base_24h": 63124394.238,
+      "volume_quote_24h": 26662.66813464996
+    },
+    {
+      "market": "MIOTA-EUR",
+      "last": 0.038188,
+      "change24_pct": -2.691,
+      "volume_base_24h": 340542.435962,
+      "volume_quote_24h": 13177.36609860194
+    },
+    {
+      "market": "MIRA-EUR",
+      "last": 0.039926,
+      "change24_pct": -8.14,
+      "volume_base_24h": 423486.47019,
+      "volume_quote_24h": 17953.33997543438
+    },
+    {
+      "market": "MLN-EUR",
+      "last": 1.2332,
+      "change24_pct": 6.365,
+      "volume_base_24h": 24807.84728954,
+      "volume_quote_24h": 31804.391947513715
+    },
+    {
+      "market": "MMT-EUR",
+      "last": 0.12162,
+      "change24_pct": -4.865,
+      "volume_base_24h": 339314.21169,
+      "volume_quote_24h": 42402.2300335474
+    },
+    {
+      "market": "MOCA-EUR",
+      "last": 0.007726,
+      "change24_pct": -2.854,
+      "volume_base_24h": 6935875.58112396,
+      "volume_quote_24h": 57073.98989519699
+    },
+    {
+      "market": "MOG-EUR",
+      "last": 8.8e-08,
+      "change24_pct": -3.667,
+      "volume_base_24h": 602937451124.0,
+      "volume_quote_24h": 53645.05145048976
+    },
+    {
+      "market": "MON-EUR",
+      "last": 0.018751,
+      "change24_pct": -1.17,
+      "volume_base_24h": 1146760.5935,
+      "volume_quote_24h": 21335.4973540961
+    },
+    {
+      "market": "MOODENG-EUR",
+      "last": 0.03395,
+      "change24_pct": -4.372,
+      "volume_base_24h": 3380633.727651,
+      "volume_quote_24h": 118636.06254735518
+    },
+    {
+      "market": "MORPHO-EUR",
+      "last": 1.8575,
+      "change24_pct": -3.959,
+      "volume_base_24h": 39107.38109853,
+      "volume_quote_24h": 74180.46745205815
+    },
+    {
+      "market": "MOVE-EUR",
+      "last": 0.006357,
+      "change24_pct": 1.097,
+      "volume_base_24h": 376236.9866791,
+      "volume_quote_24h": 2357.993621499445
+    },
+    {
+      "market": "MOVR-EUR",
+      "last": 0.9443,
+      "change24_pct": -5.447,
+      "volume_base_24h": 79191.07803042,
+      "volume_quote_24h": 77567.18758587308
+    },
+    {
+      "market": "MTL-EUR",
+      "last": 0.24532,
+      "change24_pct": 3.633,
+      "volume_base_24h": 3555198.26003234,
+      "volume_quote_24h": 932144.8378021105
+    },
+    {
+      "market": "NEAR-EUR",
+      "last": 3.9236,
+      "change24_pct": -2.257,
+      "volume_base_24h": 988492.18040449,
+      "volume_quote_24h": 3899942.474600226
+    },
+    {
+      "market": "NEIRO-EUR",
+      "last": 5.8622e-05,
+      "change24_pct": -4.037,
+      "volume_base_24h": 156512850.69,
+      "volume_quote_24h": 9297.78906411441
+    },
+    {
+      "market": "NEO-EUR",
+      "last": 1.8538,
+      "change24_pct": -3.659,
+      "volume_base_24h": 4911.41621956,
+      "volume_quote_24h": 9312.662056439112
+    },
+    {
+      "market": "NES-EUR",
+      "last": 0.09924,
+      "change24_pct": -1.43,
+      "volume_base_24h": 25242.88982,
+      "volume_quote_24h": 2508.2902409496
+    },
+    {
+      "market": "NEWT-EUR",
+      "last": 0.039663,
+      "change24_pct": -0.357,
+      "volume_base_24h": 228103.02477,
+      "volume_quote_24h": 9041.27488590423
+    },
+    {
+      "market": "NEX-EUR",
+      "last": 5.376e-07,
+      "change24_pct": -3.013,
+      "volume_base_24h": 15673333815.6,
+      "volume_quote_24h": 8493.17281274608
+    },
+    {
+      "market": "NIL-EUR",
+      "last": 0.078368,
+      "change24_pct": 3.8,
+      "volume_base_24h": 5545199.92191157,
+      "volume_quote_24h": 427985.86864899675
+    },
+    {
+      "market": "NMR-EUR",
+      "last": 8.7476,
+      "change24_pct": -2.742,
+      "volume_base_24h": 4416.20738641,
+      "volume_quote_24h": 39484.39527998117
+    },
+    {
+      "market": "NOM-EUR",
+      "last": 0.0013553,
+      "change24_pct": -4.556,
+      "volume_base_24h": 2990834.8169,
+      "volume_quote_24h": 4181.57859263711
+    },
+    {
+      "market": "NOS-EUR",
+      "last": 0.4015,
+      "change24_pct": -2.759,
+      "volume_base_24h": 39045.24583325,
+      "volume_quote_24h": 15646.627185011583
+    },
+    {
+      "market": "NOT-EUR",
+      "last": 0.00032747,
+      "change24_pct": -4.386,
+      "volume_base_24h": 6623588.365,
+      "volume_quote_24h": 2186.41827055245
+    },
+    {
+      "market": "NPC-EUR",
+      "last": 0.0153181,
+      "change24_pct": -2.88,
+      "volume_base_24h": 8919501.918,
+      "volume_quote_24h": 135747.2253232286
+    },
+    {
+      "market": "O-EUR",
+      "last": 0.37788,
+      "change24_pct": 3.049,
+      "volume_base_24h": 430492.65328,
+      "volume_quote_24h": 154245.4860907652
+    },
+    {
+      "market": "OGN-EUR",
+      "last": 0.022981,
+      "change24_pct": -6.2,
+      "volume_base_24h": 281677.51100037,
+      "volume_quote_24h": 6786.701418150354
+    },
+    {
+      "market": "ONDO-EUR",
+      "last": 0.3577,
+      "change24_pct": -1.514,
+      "volume_base_24h": 2739626.35005023,
+      "volume_quote_24h": 989403.1929117804
+    },
+    {
+      "market": "OP-EUR",
+      "last": 0.09836,
+      "change24_pct": -1.551,
+      "volume_base_24h": 1078077.69947973,
+      "volume_quote_24h": 106500.21448401987
+    },
+    {
+      "market": "OPEN-EUR",
+      "last": 0.08154,
+      "change24_pct": -6.233,
+      "volume_base_24h": 784006.43001,
+      "volume_quote_24h": 67683.1770226212
+    },
+    {
+      "market": "ORCA-EUR",
+      "last": 1.55607,
+      "change24_pct": 2.744,
+      "volume_base_24h": 108088.34842446,
+      "volume_quote_24h": 165159.72151288652
+    },
+    {
+      "market": "OSMO-EUR",
+      "last": 0.04037,
+      "change24_pct": -5.649,
+      "volume_base_24h": 203306.195813,
+      "volume_quote_24h": 8332.440612796043
+    },
+    {
+      "market": "PARTI-EUR",
+      "last": 0.030193,
+      "change24_pct": -3.623,
+      "volume_base_24h": 2635214.74384325,
+      "volume_quote_24h": 80836.6544740066
+    },
+    {
+      "market": "PEAQ-EUR",
+      "last": 0.032065,
+      "change24_pct": -2.511,
+      "volume_base_24h": 990689.25515978,
+      "volume_quote_24h": 31785.652549427727
+    },
+    {
+      "market": "PENDLE-EUR",
+      "last": 1.7411,
+      "change24_pct": -1.337,
+      "volume_base_24h": 41448.36719188,
+      "volume_quote_24h": 73007.89179503037
+    },
+    {
+      "market": "PENGU-EUR",
+      "last": 0.0065507,
+      "change24_pct": -3.792,
+      "volume_base_24h": 24133787.423,
+      "volume_quote_24h": 160854.7090914282
+    },
+    {
+      "market": "PEOPLE-EUR",
+      "last": 0.0067383,
+      "change24_pct": -0.352,
+      "volume_base_24h": 1237551.20045125,
+      "volume_quote_24h": 8245.428920636035
+    },
+    {
+      "market": "PEPE-EUR",
+      "last": 3.9673e-06,
+      "change24_pct": 0.977,
+      "volume_base_24h": 709656406906.0,
+      "volume_quote_24h": 2778005.4219040633
+    },
+    {
+      "market": "PHA-EUR",
+      "last": 0.04353,
+      "change24_pct": -5.314,
+      "volume_base_24h": 7376381.23654298,
+      "volume_quote_24h": 323807.9318530066
+    },
+    {
+      "market": "PIXEL-EUR",
+      "last": 0.0043524,
+      "change24_pct": -4.826,
+      "volume_base_24h": 10898044.10105677,
+      "volume_quote_24h": 48710.034898069986
+    },
+    {
+      "market": "PLUME-EUR",
+      "last": 0.0136724,
+      "change24_pct": -2.186,
+      "volume_base_24h": 7054783.06217963,
+      "volume_quote_24h": 98143.90698900874
+    },
+    {
+      "market": "PNT-EUR",
+      "last": 0.027454,
+      "change24_pct": -5.834,
+      "volume_base_24h": 1097696.6234,
+      "volume_quote_24h": 30384.7155206201
+    },
+    {
+      "market": "PNUT-EUR",
+      "last": 0.036439,
+      "change24_pct": -3.342,
+      "volume_base_24h": 172856.144518,
+      "volume_quote_24h": 6430.892476097586
+    },
+    {
+      "market": "POL-EUR",
+      "last": 0.078567,
+      "change24_pct": -1.346,
+      "volume_base_24h": 466726.94531672,
+      "volume_quote_24h": 36939.886625819905
+    },
+    {
+      "market": "POND-EUR",
+      "last": 0.0013027,
+      "change24_pct": -0.694,
+      "volume_base_24h": 43263849.152,
+      "volume_quote_24h": 58742.0057571811
+    },
+    {
+      "market": "PONKE-EUR",
+      "last": 0.016604,
+      "change24_pct": -2.387,
+      "volume_base_24h": 347895.64181958,
+      "volume_quote_24h": 5865.3873837849
+    },
+    {
+      "market": "POPCAT-EUR",
+      "last": 0.037428,
+      "change24_pct": -5.96,
+      "volume_base_24h": 150293.28295828,
+      "volume_quote_24h": 5813.383674257945
+    },
+    {
+      "market": "PORTAL-EUR",
+      "last": 0.0121,
+      "change24_pct": -5.321,
+      "volume_base_24h": 2491700.75639318,
+      "volume_quote_24h": 31056.10425821302
+    },
+    {
+      "market": "POWR-EUR",
+      "last": 0.047137,
+      "change24_pct": -3.639,
+      "volume_base_24h": 1674078.975537,
+      "volume_quote_24h": 81948.43682446347
+    },
+    {
+      "market": "PROM-EUR",
+      "last": 4.8691,
+      "change24_pct": -2.345,
+      "volume_base_24h": 9531.1502645,
+      "volume_quote_24h": 46206.43134307068
+    },
+    {
+      "market": "PROMPT-EUR",
+      "last": 0.016083,
+      "change24_pct": 5.028,
+      "volume_base_24h": 26366870.5864,
+      "volume_quote_24h": 489238.0214258729
+    },
+    {
+      "market": "PROVE-EUR",
+      "last": 0.1632,
+      "change24_pct": -0.299,
+      "volume_base_24h": 15346.80287,
+      "volume_quote_24h": 2529.9693578653
+    },
+    {
+      "market": "PTB-EUR",
+      "last": 0.0002107,
+      "change24_pct": -2.724,
+      "volume_base_24h": 1965468694.87,
+      "volume_quote_24h": 450789.7449756846
+    },
+    {
+      "market": "PUFFER-EUR",
+      "last": 0.025107,
+      "change24_pct": -5.998,
+      "volume_base_24h": 570689.50239364,
+      "volume_quote_24h": 15083.391070835412
+    },
+    {
+      "market": "PUMP-EUR",
+      "last": 0.0037365,
+      "change24_pct": -1.14,
+      "volume_base_24h": 157627506.552,
+      "volume_quote_24h": 594363.8132932433
+    },
+    {
+      "market": "PUNDIX-EUR",
+      "last": 0.09096,
+      "change24_pct": -0.742,
+      "volume_base_24h": 141363.85946805,
+      "volume_quote_24h": 13217.304795691318
+    },
+    {
+      "market": "PYTH-EUR",
+      "last": 0.063137,
+      "change24_pct": 1.001,
+      "volume_base_24h": 1683592.524656,
+      "volume_quote_24h": 104724.34010815545
+    },
+    {
+      "market": "QKC-EUR",
+      "last": 0.0020745,
+      "change24_pct": 0.596,
+      "volume_base_24h": 15570240.558,
+      "volume_quote_24h": 33369.6021615929
+    },
+    {
+      "market": "QNT-EUR",
+      "last": 161.191,
+      "change24_pct": 1.04,
+      "volume_base_24h": 12002.9650347,
+      "volume_quote_24h": 1918846.3599064595
+    },
+    {
+      "market": "QUID-EUR",
+      "last": 0.050358,
+      "change24_pct": -5.743,
+      "volume_base_24h": 696818.9888,
+      "volume_quote_24h": 37216.0553589308
+    },
+    {
+      "market": "RAD-EUR",
+      "last": 0.24327,
+      "change24_pct": -0.365,
+      "volume_base_24h": 1277.62495444,
+      "volume_quote_24h": 309.8572735874235
+    },
+    {
+      "market": "RARE-EUR",
+      "last": 0.010781,
+      "change24_pct": -4.66,
+      "volume_base_24h": 2487354.9358775,
+      "volume_quote_24h": 27423.590059745027
+    },
+    {
+      "market": "RAY-EUR",
+      "last": 1.60753,
+      "change24_pct": 0.168,
+      "volume_base_24h": 111974.3786,
+      "volume_quote_24h": 181372.710295259
+    },
+    {
+      "market": "RE-EUR",
+      "last": 0.341,
+      "change24_pct": -0.059,
+      "volume_base_24h": 59536.60191,
+      "volume_quote_24h": 20374.5578676653
+    },
+    {
+      "market": "RECALL-EUR",
+      "last": 0.033419,
+      "change24_pct": -3.544,
+      "volume_base_24h": 5116491.47018,
+      "volume_quote_24h": 173299.65371878765
+    },
+    {
+      "market": "RED-EUR",
+      "last": 0.12734,
+      "change24_pct": -3.916,
+      "volume_base_24h": 249583.73166057,
+      "volume_quote_24h": 32657.01888495461
+    },
+    {
+      "market": "RENDER-EUR",
+      "last": 1.4949,
+      "change24_pct": -1.444,
+      "volume_base_24h": 193619.87261463,
+      "volume_quote_24h": 290225.7411850468
+    },
+    {
+      "market": "REQ-EUR",
+      "last": 0.045425,
+      "change24_pct": -3.464,
+      "volume_base_24h": 39686.98780201,
+      "volume_quote_24h": 1839.5655524770607
+    },
+    {
+      "market": "REZ-EUR",
+      "last": 0.0037987,
+      "change24_pct": -1.954,
+      "volume_base_24h": 34940489.02511871,
+      "volume_quote_24h": 134736.6501410237
+    },
+    {
+      "market": "RLC-EUR",
+      "last": 0.46868,
+      "change24_pct": -13.768,
+      "volume_base_24h": 502468.41562539,
+      "volume_quote_24h": 255060.7688835944
+    },
+    {
+      "market": "ROBO-EUR",
+      "last": 0.004978,
+      "change24_pct": -4.873,
+      "volume_base_24h": 5751391.5956,
+      "volume_quote_24h": 29163.9540750116
+    },
+    {
+      "market": "RON-EUR",
+      "last": 0.047443,
+      "change24_pct": -3.257,
+      "volume_base_24h": 96860.04250537,
+      "volume_quote_24h": 4683.668776592172
+    },
+    {
+      "market": "ROSE-EUR",
+      "last": 0.006008,
+      "change24_pct": -3.393,
+      "volume_base_24h": 6874004.45439496,
+      "volume_quote_24h": 42114.38988932467
+    },
+    {
+      "market": "RPL-EUR",
+      "last": 1.3022,
+      "change24_pct": -1.624,
+      "volume_base_24h": 1523.32519566,
+      "volume_quote_24h": 1982.643051376174
+    },
+    {
+      "market": "RSR-EUR",
+      "last": 0.0014187,
+      "change24_pct": -4.084,
+      "volume_base_24h": 24208244.9897,
+      "volume_quote_24h": 34948.33012001563
+    },
+    {
+      "market": "RUNE-EUR",
+      "last": 0.55573,
+      "change24_pct": -0.755,
+      "volume_base_24h": 31962.78230298,
+      "volume_quote_24h": 17741.07350076751
+    },
+    {
+      "market": "S-EUR",
+      "last": 0.041754,
+      "change24_pct": -5.959,
+      "volume_base_24h": 1280138.83294333,
+      "volume_quote_24h": 54381.922826862654
+    },
+    {
+      "market": "SAFE-EUR",
+      "last": 0.092597,
+      "change24_pct": 0.989,
+      "volume_base_24h": 272858.40946496,
+      "volume_quote_24h": 25350.396541157777
+    },
+    {
+      "market": "SAGA-EUR",
+      "last": 0.015737,
+      "change24_pct": -3.967,
+      "volume_base_24h": 1653603.07258969,
+      "volume_quote_24h": 26091.247148092145
+    },
+    {
+      "market": "SAND-EUR",
+      "last": 0.042879,
+      "change24_pct": -4.275,
+      "volume_base_24h": 558099.28889902,
+      "volume_quote_24h": 24527.588328300826
+    },
+    {
+      "market": "SAPIEN-EUR",
+      "last": 0.048802,
+      "change24_pct": -3.376,
+      "volume_base_24h": 715592.41706,
+      "volume_quote_24h": 35526.22449233788
+    },
+    {
+      "market": "SCR-EUR",
+      "last": 0.017239,
+      "change24_pct": 0.145,
+      "volume_base_24h": 1077984.01132984,
+      "volume_quote_24h": 18582.669172325226
+    },
+    {
+      "market": "SEI-EUR",
+      "last": 0.046834,
+      "change24_pct": -3.143,
+      "volume_base_24h": 2556226.96577915,
+      "volume_quote_24h": 121456.72509029425
+    },
+    {
+      "market": "SENT-EUR",
+      "last": 0.018395,
+      "change24_pct": -5.589,
+      "volume_base_24h": 1282638.3837,
+      "volume_quote_24h": 24216.2242250241
+    },
+    {
+      "market": "SFP-EUR",
+      "last": 0.22003,
+      "change24_pct": -1.781,
+      "volume_base_24h": 9428.99327562,
+      "volume_quote_24h": 2111.119003267626
+    },
+    {
+      "market": "SHELL-EUR",
+      "last": 0.01946,
+      "change24_pct": -3.735,
+      "volume_base_24h": 1092749.6575,
+      "volume_quote_24h": 21696.8496519492
+    },
+    {
+      "market": "SHIB-EUR",
+      "last": 4.3278e-06,
+      "change24_pct": -1.352,
+      "volume_base_24h": 26815139285.58,
+      "volume_quote_24h": 116189.15619526929
+    },
+    {
+      "market": "SIGN-EUR",
+      "last": 0.009499,
+      "change24_pct": -3.749,
+      "volume_base_24h": 1110435.9066,
+      "volume_quote_24h": 10792.2128474643
+    },
+    {
+      "market": "SKL-EUR",
+      "last": 0.0036071,
+      "change24_pct": -0.387,
+      "volume_base_24h": 3169293.63773805,
+      "volume_quote_24h": 11352.115910659917
+    },
+    {
+      "market": "SKY-EUR",
+      "last": 0.061163,
+      "change24_pct": -1.587,
+      "volume_base_24h": 295211.1996,
+      "volume_quote_24h": 18197.5557212641
+    },
+    {
+      "market": "SLP-EUR",
+      "last": 0.00046404,
+      "change24_pct": -3.822,
+      "volume_base_24h": 25176350.0468,
+      "volume_quote_24h": 11882.054148802132
+    },
+    {
+      "market": "SLX-EUR",
+      "last": 0.04266,
+      "change24_pct": -6.754,
+      "volume_base_24h": 575765.47821,
+      "volume_quote_24h": 25435.0499420274
+    },
+    {
+      "market": "SNX-EUR",
+      "last": 0.17368,
+      "change24_pct": -3.107,
+      "volume_base_24h": 13751.18198472,
+      "volume_quote_24h": 2429.2489462125345
+    },
+    {
+      "market": "SOL-EUR",
+      "last": 89.856,
+      "change24_pct": -0.76,
+      "volume_base_24h": 86855.14117081,
+      "volume_quote_24h": 7807530.188384646
+    },
+    {
+      "market": "SOLV-EUR",
+      "last": 0.004044,
+      "change24_pct": 6.172,
+      "volume_base_24h": 13442183.392,
+      "volume_quote_24h": 53295.43085983053
+    },
+    {
+      "market": "SOMI-EUR",
+      "last": 0.15142,
+      "change24_pct": -4.893,
+      "volume_base_24h": 34448.36206,
+      "volume_quote_24h": 5344.8553439277
+    },
+    {
+      "market": "SOON-EUR",
+      "last": 0.2695,
+      "change24_pct": -1.141,
+      "volume_base_24h": 54861.39425,
+      "volume_quote_24h": 15004.2615791304
+    },
+    {
+      "market": "SOSO-EUR",
+      "last": 0.25887,
+      "change24_pct": -0.568,
+      "volume_base_24h": 8086.70077,
+      "volume_quote_24h": 2089.3399473822
+    },
+    {
+      "market": "SPK-EUR",
+      "last": 0.015849,
+      "change24_pct": -3.969,
+      "volume_base_24h": 556529.9489,
+      "volume_quote_24h": 8973.2183569542
+    },
+    {
+      "market": "SPX-EUR",
+      "last": 0.32348,
+      "change24_pct": 3.567,
+      "volume_base_24h": 695339.9029719,
+      "volume_quote_24h": 216806.85313433773
+    },
+    {
+      "market": "SQD-EUR",
+      "last": 0.017869,
+      "change24_pct": 0.314,
+      "volume_base_24h": 12768584.83344,
+      "volume_quote_24h": 230260.76044067912
+    },
+    {
+      "market": "SSV-EUR",
+      "last": 2.2111,
+      "change24_pct": -1.549,
+      "volume_base_24h": 573.20660249,
+      "volume_quote_24h": 1271.381057784948
+    },
+    {
+      "market": "STO-EUR",
+      "last": 0.028253,
+      "change24_pct": -2.589,
+      "volume_base_24h": 1065471.96225,
+      "volume_quote_24h": 30420.96195877828
+    },
+    {
+      "market": "STRAX-EUR",
+      "last": 0.009286,
+      "change24_pct": -9.993,
+      "volume_base_24h": 3742456.77220517,
+      "volume_quote_24h": 36729.33845130403
+    },
+    {
+      "market": "STRK-EUR",
+      "last": 0.0403,
+      "change24_pct": -6.054,
+      "volume_base_24h": 3218294.78619034,
+      "volume_quote_24h": 134419.01066081016
+    },
+    {
+      "market": "STX-EUR",
+      "last": 0.2652,
+      "change24_pct": -1.992,
+      "volume_base_24h": 203165.86522034,
+      "volume_quote_24h": 54622.72041177529
+    },
+    {
+      "market": "SUI-EUR",
+      "last": 0.81433,
+      "change24_pct": -3.586,
+      "volume_base_24h": 3387252.84029069,
+      "volume_quote_24h": 2796813.1460944572
+    },
+    {
+      "market": "SUPER-EUR",
+      "last": 0.1566,
+      "change24_pct": -4.634,
+      "volume_base_24h": 323133.35171045,
+      "volume_quote_24h": 51533.4133953103
+    },
+    {
+      "market": "SUSHI-EUR",
+      "last": 0.17797,
+      "change24_pct": -3.461,
+      "volume_base_24h": 60490.15843453,
+      "volume_quote_24h": 10960.444028820097
+    },
+    {
+      "market": "SWELL-EUR",
+      "last": 0.0005964,
+      "change24_pct": -2.005,
+      "volume_base_24h": 11281690.3373,
+      "volume_quote_24h": 6582.546418367
+    },
+    {
+      "market": "SXT-EUR",
+      "last": 0.007374,
+      "change24_pct": -2.085,
+      "volume_base_24h": 10116890.3012,
+      "volume_quote_24h": 76282.876860089
+    },
+    {
+      "market": "SYN-EUR",
+      "last": 0.132599,
+      "change24_pct": -1.268,
+      "volume_base_24h": 234283.72276153,
+      "volume_quote_24h": 31677.96405669024
+    },
+    {
+      "market": "SYRUP-EUR",
+      "last": 0.15372,
+      "change24_pct": -3.4,
+      "volume_base_24h": 750532.48577911,
+      "volume_quote_24h": 117872.37629351526
+    },
+    {
+      "market": "T-EUR",
+      "last": 0.0056,
+      "change24_pct": 35.191,
+      "volume_base_24h": 181495742.24722123,
+      "volume_quote_24h": 1069497.2226990014
+    },
+    {
+      "market": "TAI-EUR",
+      "last": 0.003047,
+      "change24_pct": -2.962,
+      "volume_base_24h": 2475114.00212239,
+      "volume_quote_24h": 7623.910318095206
+    },
+    {
+      "market": "TAIKO-EUR",
+      "last": 0.07032,
+      "change24_pct": -0.397,
+      "volume_base_24h": 2591064.56691043,
+      "volume_quote_24h": 185485.15620764278
+    },
+    {
+      "market": "TAO-EUR",
+      "last": 220.91,
+      "change24_pct": -0.585,
+      "volume_base_24h": 10154.6921125,
+      "volume_quote_24h": 2236797.8118835757
+    },
+    {
+      "market": "THE-EUR",
+      "last": 0.04574,
+      "change24_pct": -2.411,
+      "volume_base_24h": 266572.39368109,
+      "volume_quote_24h": 12389.869110007861
+    },
+    {
+      "market": "THQ-EUR",
+      "last": 0.009215,
+      "change24_pct": -0.935,
+      "volume_base_24h": 436867.3311,
+      "volume_quote_24h": 4059.7251029038
+    },
+    {
+      "market": "TIA-EUR",
+      "last": 0.47136,
+      "change24_pct": -3.523,
+      "volume_base_24h": 628008.771252,
+      "volume_quote_24h": 298444.94578188274
+    },
+    {
+      "market": "TLM-EUR",
+      "last": 0.0010311,
+      "change24_pct": -1.763,
+      "volume_base_24h": 7712658.9237,
+      "volume_quote_24h": 8057.77479867006
+    },
+    {
+      "market": "TNSR-EUR",
+      "last": 0.026096,
+      "change24_pct": -3.85,
+      "volume_base_24h": 300543.9291301,
+      "volume_quote_24h": 7987.717051399193
+    },
+    {
+      "market": "TOSHI-EUR",
+      "last": 9.61e-05,
+      "change24_pct": -1.859,
+      "volume_base_24h": 251127607.25,
+      "volume_quote_24h": 24386.9751853156
+    },
+    {
+      "market": "TOWNS-EUR",
+      "last": 0.0012598,
+      "change24_pct": -4.292,
+      "volume_base_24h": 11022289.6165,
+      "volume_quote_24h": 13975.34987644562
+    },
+    {
+      "market": "TRAC-EUR",
+      "last": 0.3358,
+      "change24_pct": -1.49,
+      "volume_base_24h": 302684.12704731,
+      "volume_quote_24h": 103887.51609689086
+    },
+    {
+      "market": "TRB-EUR",
+      "last": 15.507,
+      "change24_pct": -2.084,
+      "volume_base_24h": 1193.1282883,
+      "volume_quote_24h": 18699.59449649069
+    },
+    {
+      "market": "TREAD-EUR",
+      "last": 0.65994,
+      "change24_pct": 22.704,
+      "volume_base_24h": 257167.39432,
+      "volume_quote_24h": 155967.5804553891
+    },
+    {
+      "market": "TREE-EUR",
+      "last": 0.0334,
+      "change24_pct": -19.218,
+      "volume_base_24h": 15959707.22201,
+      "volume_quote_24h": 642905.4708288902
+    },
+    {
+      "market": "TRIA-EUR",
+      "last": 0.002289,
+      "change24_pct": -0.392,
+      "volume_base_24h": 19931184.1487,
+      "volume_quote_24h": 45437.740529169
+    },
+    {
+      "market": "TRUMP-EUR",
+      "last": 1.4706,
+      "change24_pct": -1.612,
+      "volume_base_24h": 116629.56196038,
+      "volume_quote_24h": 172920.01422295946
+    },
+    {
+      "market": "TRUST-EUR",
+      "last": 0.043382,
+      "change24_pct": -7.345,
+      "volume_base_24h": 1063266.57082,
+      "volume_quote_24h": 49135.68452899582
+    },
+    {
+      "market": "TRX-EUR",
+      "last": 0.29338,
+      "change24_pct": -0.519,
+      "volume_base_24h": 385121.238147,
+      "volume_quote_24h": 113147.22458762373
+    },
+    {
+      "market": "TURBO-EUR",
+      "last": 0.0007248,
+      "change24_pct": -0.165,
+      "volume_base_24h": 10049811.846,
+      "volume_quote_24h": 7388.6166528086
+    },
+    {
+      "market": "TWT-EUR",
+      "last": 0.38413,
+      "change24_pct": 0.0,
+      "volume_base_24h": 71.23333282,
+      "volume_quote_24h": 27.3628601361466
+    },
+    {
+      "market": "UMA-EUR",
+      "last": 0.3153,
+      "change24_pct": -4.44,
+      "volume_base_24h": 4226.8702254,
+      "volume_quote_24h": 1375.8957191868687
+    },
+    {
+      "market": "UNI-EUR",
+      "last": 5.9634,
+      "change24_pct": -2.223,
+      "volume_base_24h": 54175.59397426,
+      "volume_quote_24h": 323284.4398678183
+    },
+    {
+      "market": "UP-EUR",
+      "last": 0.060833,
+      "change24_pct": -5.764,
+      "volume_base_24h": 4828768.83396,
+      "volume_quote_24h": 357132.65798775683
+    },
+    {
+      "market": "USDCV-EUR",
+      "last": 0.89252,
+      "change24_pct": null,
+      "volume_base_24h": 0,
+      "volume_quote_24h": 0
+    },
+    {
+      "market": "USELESS-EUR",
+      "last": 0.154712,
+      "change24_pct": 8.151,
+      "volume_base_24h": 8896443.33563,
+      "volume_quote_24h": 1337109.1196688376
+    },
+    {
+      "market": "VANA-EUR",
+      "last": 0.7443,
+      "change24_pct": -8.551,
+      "volume_base_24h": 13518.15864096,
+      "volume_quote_24h": 10335.507003679028
+    },
+    {
+      "market": "VELO-EUR",
+      "last": 0.0033635,
+      "change24_pct": 0.274,
+      "volume_base_24h": 6579455.7768,
+      "volume_quote_24h": 22278.24138087178
+    },
+    {
+      "market": "VERONA-EUR",
+      "last": 0.092,
+      "change24_pct": -0.487,
+      "volume_base_24h": 28019.44072,
+      "volume_quote_24h": 2568.1745310248
+    },
+    {
+      "market": "VET-EUR",
+      "last": 0.0060054,
+      "change24_pct": -3.605,
+      "volume_base_24h": 39275258.67127291,
+      "volume_quote_24h": 237951.0551896405
+    },
+    {
+      "market": "VIRTUAL-EUR",
+      "last": 0.54799,
+      "change24_pct": -2.145,
+      "volume_base_24h": 109691.97491824,
+      "volume_quote_24h": 60477.373041480685
+    },
+    {
+      "market": "VSN-EUR",
+      "last": 0.034734,
+      "change24_pct": 0.101,
+      "volume_base_24h": 452575.7395,
+      "volume_quote_24h": 15801.41171039
+    },
+    {
+      "market": "VTHO-EUR",
+      "last": 0.00051731,
+      "change24_pct": -1.706,
+      "volume_base_24h": 241991962.088,
+      "volume_quote_24h": 125008.90837065456
+    },
+    {
+      "market": "VVV-EUR",
+      "last": 21.8118,
+      "change24_pct": 1.37,
+      "volume_base_24h": 5012.422778,
+      "volume_quote_24h": 108468.0153197941
+    },
+    {
+      "market": "W-EUR",
+      "last": 0.010637,
+      "change24_pct": -4.507,
+      "volume_base_24h": 22122223.644497,
+      "volume_quote_24h": 241263.0851159424
+    },
+    {
+      "market": "WAL-EUR",
+      "last": 0.029436,
+      "change24_pct": -6.57,
+      "volume_base_24h": 2974983.32037007,
+      "volume_quote_24h": 91043.53387403667
+    },
+    {
+      "market": "WAXP-EUR",
+      "last": 0.0040174,
+      "change24_pct": -0.849,
+      "volume_base_24h": 9178824.27160684,
+      "volume_quote_24h": 38882.52201769502
+    },
+    {
+      "market": "WCT-EUR",
+      "last": 0.031496,
+      "change24_pct": -7.555,
+      "volume_base_24h": 4561191.043834,
+      "volume_quote_24h": 156363.4963902658
+    },
+    {
+      "market": "WELL-EUR",
+      "last": 0.0018173,
+      "change24_pct": -3.077,
+      "volume_base_24h": 5845780.32914803,
+      "volume_quote_24h": 10897.325285085322
+    },
+    {
+      "market": "WHUF-EUR",
+      "last": 2.032,
+      "change24_pct": -1.85,
+      "volume_base_24h": 19088.117128,
+      "volume_quote_24h": 39993.0058235607
+    },
+    {
+      "market": "WIF-EUR",
+      "last": 0.15762,
+      "change24_pct": -4.264,
+      "volume_base_24h": 604839.430532,
+      "volume_quote_24h": 97536.2073096087
+    },
+    {
+      "market": "WIN-EUR",
+      "last": 5.6049e-05,
+      "change24_pct": 3.162,
+      "volume_base_24h": 289579829.545195,
+      "volume_quote_24h": 15916.144629701368
+    },
+    {
+      "market": "WLD-EUR",
+      "last": 0.39701,
+      "change24_pct": -5.422,
+      "volume_base_24h": 7764481.28444117,
+      "volume_quote_24h": 3160846.5174964215
+    },
+    {
+      "market": "WLFI-EUR",
+      "last": 0.04714,
+      "change24_pct": -0.716,
+      "volume_base_24h": 589675.73077,
+      "volume_quote_24h": 27871.6954143209
+    },
+    {
+      "market": "WMTX-EUR",
+      "last": 0.017102,
+      "change24_pct": 0.0,
+      "volume_base_24h": 9428.4148,
+      "volume_quote_24h": 161.2332453108
+    },
+    {
+      "market": "WOO-EUR",
+      "last": 0.009458,
+      "change24_pct": -0.222,
+      "volume_base_24h": 49239856.00247489,
+      "volume_quote_24h": 470412.35052736965
+    },
+    {
+      "market": "XAI-EUR",
+      "last": 0.0068151,
+      "change24_pct": -4.655,
+      "volume_base_24h": 744670.51,
+      "volume_quote_24h": 5169.2836235123
+    },
+    {
+      "market": "XAN-EUR",
+      "last": 0.0070983,
+      "change24_pct": -9.196,
+      "volume_base_24h": 11487171.8612,
+      "volume_quote_24h": 85560.81524515884
+    },
+    {
+      "market": "XDC-EUR",
+      "last": 0.028338,
+      "change24_pct": -4.56,
+      "volume_base_24h": 1103600.95678405,
+      "volume_quote_24h": 32003.35551545125
+    },
+    {
+      "market": "XDP-EUR",
+      "last": 0.015697,
+      "change24_pct": -3.296,
+      "volume_base_24h": 5499797.0565,
+      "volume_quote_24h": 88021.2396161603
+    },
+    {
+      "market": "XLM-EUR",
+      "last": 0.15067,
+      "change24_pct": -0.587,
+      "volume_base_24h": 5912332.5919844,
+      "volume_quote_24h": 895020.4454383911
+    },
+    {
+      "market": "XMN-EUR",
+      "last": 0.000314,
+      "change24_pct": -9.249,
+      "volume_base_24h": 84284785.1141,
+      "volume_quote_24h": 27431.2353608486
+    },
+    {
+      "market": "XPL-EUR",
+      "last": 0.063946,
+      "change24_pct": -3.849,
+      "volume_base_24h": 1842136.85464,
+      "volume_quote_24h": 119079.01513022013
+    },
+    {
+      "market": "XRP-EUR",
+      "last": 1.15367,
+      "change24_pct": 1.08,
+      "volume_base_24h": 10052530.486038,
+      "volume_quote_24h": 11512843.951672528
+    },
+    {
+      "market": "XTZ-EUR",
+      "last": 0.255,
+      "change24_pct": -3.897,
+      "volume_base_24h": 20071.29395,
+      "volume_quote_24h": 5198.47625353491
+    },
+    {
+      "market": "XVG-EUR",
+      "last": 0.0021217,
+      "change24_pct": -2.813,
+      "volume_base_24h": 44655739.495026,
+      "volume_quote_24h": 95950.4408851169
+    },
+    {
+      "market": "XYO-EUR",
+      "last": 0.0027801,
+      "change24_pct": -1.425,
+      "volume_base_24h": 498580.809,
+      "volume_quote_24h": 1395.370822058
+    },
+    {
+      "market": "YB-EUR",
+      "last": 0.05659,
+      "change24_pct": 1.216,
+      "volume_base_24h": 956737.24797,
+      "volume_quote_24h": 54548.596850598
+    },
+    {
+      "market": "YFI-EUR",
+      "last": 1863.7,
+      "change24_pct": -3.57,
+      "volume_base_24h": 19.90750292,
+      "volume_quote_24h": 37977.490483189
+    },
+    {
+      "market": "YGG-EUR",
+      "last": 0.02147,
+      "change24_pct": -3.946,
+      "volume_base_24h": 474827.10088558,
+      "volume_quote_24h": 10658.69089239397
+    },
+    {
+      "market": "ZAMA-EUR",
+      "last": 0.059805,
+      "change24_pct": -3.54,
+      "volume_base_24h": 1195395.8778,
+      "volume_quote_24h": 71975.9143844131
+    },
+    {
+      "market": "ZBCN-EUR",
+      "last": 0.0019126,
+      "change24_pct": 0.052,
+      "volume_base_24h": 5870069.657,
+      "volume_quote_24h": 11137.0421780324
+    },
+    {
+      "market": "ZBT-EUR",
+      "last": 0.059471,
+      "change24_pct": -8.379,
+      "volume_base_24h": 4212907.43196,
+      "volume_quote_24h": 284746.8261774041
+    },
+    {
+      "market": "ZEN-EUR",
+      "last": 5.0059,
+      "change24_pct": -3.279,
+      "volume_base_24h": 5751.93381659,
+      "volume_quote_24h": 28984.150243440617
+    },
+    {
+      "market": "ZETA-EUR",
+      "last": 0.0345,
+      "change24_pct": -4.938,
+      "volume_base_24h": 282988.2738,
+      "volume_quote_24h": 10140.5111586527
+    },
+    {
+      "market": "ZEUS-EUR",
+      "last": 0.0061848,
+      "change24_pct": -4.39,
+      "volume_base_24h": 20984812.47086084,
+      "volume_quote_24h": 131605.3942292093
+    },
+    {
+      "market": "ZIG-EUR",
+      "last": 0.037891,
+      "change24_pct": 9.436,
+      "volume_base_24h": 5519053.5683,
+      "volume_quote_24h": 217802.9833437262
+    },
+    {
+      "market": "ZIL-EUR",
+      "last": 0.0017388,
+      "change24_pct": -4.828,
+      "volume_base_24h": 17503528.0682,
+      "volume_quote_24h": 31320.8757918407
+    },
+    {
+      "market": "ZK-EUR",
+      "last": 0.010619,
+      "change24_pct": -6.9,
+      "volume_base_24h": 1286742.05006637,
+      "volume_quote_24h": 14095.553956153202
+    },
+    {
+      "market": "ZKC-EUR",
+      "last": 0.029989,
+      "change24_pct": -11.633,
+      "volume_base_24h": 1316094.58812,
+      "volume_quote_24h": 42338.11913832127
+    },
+    {
+      "market": "ZKJ-EUR",
+      "last": 0.00493,
+      "change24_pct": -0.041,
+      "volume_base_24h": 2412545.76624152,
+      "volume_quote_24h": 11834.213037536467
+    },
+    {
+      "market": "ZKP-EUR",
+      "last": 0.037321,
+      "change24_pct": -6.358,
+      "volume_base_24h": 807738.63598,
+      "volume_quote_24h": 31421.01766432718
+    },
+    {
+      "market": "ZORA-EUR",
+      "last": 0.005806,
+      "change24_pct": -11.79,
+      "volume_base_24h": 25475580.8396,
+      "volume_quote_24h": 156286.3447370661
+    },
+    {
+      "market": "ZRC-EUR",
+      "last": 0.0008807,
+      "change24_pct": 2.241,
+      "volume_base_24h": 53586298.16899209,
+      "volume_quote_24h": 47068.6012145461
+    },
+    {
+      "market": "ZRO-EUR",
+      "last": 1.5337,
+      "change24_pct": 1.853,
+      "volume_base_24h": 63474.83039644,
+      "volume_quote_24h": 97530.67851479788
+    },
+    {
+      "market": "ZRX-EUR",
+      "last": 0.089969,
+      "change24_pct": -2.208,
+      "volume_base_24h": 48930.1267811,
+      "volume_quote_24h": 4495.511048768206
+    }
+  ]
+}
