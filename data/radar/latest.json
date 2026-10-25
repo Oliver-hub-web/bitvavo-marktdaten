@@ -1,24 +1,11 @@
 {
-  "scanned_at_utc": "2026-10-25T17:22:09.808898+00:00",
+  "scanned_at_utc": "2026-10-25T17:48:35.247002+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 1,
-  "new_signal_count": 1,
-  "signals": [
-    {
-      "symbol": "OSMOUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1792948500000,
-      "price_usdt": 0.049,
-      "change24_pct": 6.061,
-      "volume_ratio_24h": 4.554,
-      "prior_6h_high_usdt": 0.0527,
-      "breakout_6h": false,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    }
-  ],
+  "radar_count": 0,
+  "new_signal_count": 0,
+  "signals": [],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
