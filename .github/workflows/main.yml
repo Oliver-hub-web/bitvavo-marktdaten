@@ -45,9 +45,13 @@ jobs:
 
           # Discover the actual available spot universe, not a fixed list of 20 coins.
           info = fetch('exchangeInfo')
+          # Stablecoin bases often create misleading pump signals.
+          stable_bases = {'USDT','USDC','FDUSD','TUSD','USDE','USDD','DAI',
+                          'USDP','PYUSD','EURC','EURI','AEUR','XUSD','U'}
           tradable = {m['symbol'] for m in info['symbols']
                       if m.get('status') == 'TRADING' and m.get('isSpotTradingAllowed', True)
-                      and m.get('quoteAsset') in ('USDT', 'USDC', 'EUR')}
+                      and m.get('quoteAsset') in ('USDT', 'USDC', 'EUR')
+                      and m.get('baseAsset') not in stable_bases}
           tickers = fetch('ticker/24hr')
           market = {t['symbol']: t for t in tickers if t.get('symbol') in tradable}
           def num(t, key):
@@ -69,11 +73,29 @@ jobs:
                   candidates.append((score, symbol, t))
           candidates.sort(reverse=True)
           # Rotate coverage so less prominent coins are not excluded indefinitely.
-          ordered = candidates[:75]
-          tail = candidates[75:]
+          # Tickers for every tradable market are checked each run.
+          # Expensive 5m candles rotate across all eligible candidates.
+          # Priority candidates are scanned every run; tail coverage cycles.
+          priority_count = 50
+          batch_count = 170
+          ordered = candidates[:priority_count]
+          tail = candidates[priority_count:]
           if tail:
-              start = (int(time.time()) // 300 * 35) % len(tail)
-              ordered += (tail[start:] + tail[:start])[:35]
+              scan_slot = int(time.time()) // 300
+              start = (scan_slot * batch_count) % len(tail)
+              ordered += (tail[start:] + tail[:start])[:batch_count]
+          # Probe Bitvavo's public market list. No EUR prices are inferred.
+          bitvavo_status = {'available': False, 'eur_markets': None}
+          try:
+              req = urllib.request.Request('https://api.bitvavo.com/v2/markets',
+                                           headers={'User-Agent':'crypto-market-research/1.0'})
+              with urllib.request.urlopen(req, timeout=12) as response:
+                  bv_markets = json.load(response)
+              bitvavo_status = {'available': True,
+                                'eur_markets': sum(1 for m in bv_markets
+                                    if m.get('quote') == 'EUR' and m.get('status') == 'trading')}
+          except Exception as exc:
+              bitvavo_status['error'] = str(exc)[:180]
           prior = load(ROOT / 'latest.json', {})
           # Earlier test used mismatched base/quote units for buyer pressure.
           # Do not treat those historical candidates as validated outcomes.
@@ -175,11 +197,13 @@ jobs:
                     'markets_discovered':len(market),
                     'markets_preselected':len(candidates),
                     'markets_requested':len(ordered), 'markets_ok':examined,
+                    'bitvavo_market_probe':bitvavo_status,
+                    'coverage_note':'All Binance tickers checked; candle checks rotate through eligible markets.',
                     'radar_count':len(found),
                     'new_signal_count':len([s for s in found if s['symbol'] not in previous]),
                     'signals':found[:100], 'followups':followups[:100],
                     'errors':errors[:40],
-                    'coverage_warning':'Not whole-market candle coverage; no Bitvavo EUR, forums, or news validation. Signals are experimental.'}
+                    'coverage_warning':'Rotating Binance candle coverage; Bitvavo EUR prices, forums and news NOT verified. Signals experimental.'}
           save(ROOT / 'latest.json', latest)
           print('Discovered:',len(market),'scanned:',examined,'signals:',len(found),'errors:',len(errors))
           PY
