@@ -514,5 +514,17 @@
     "breakout_6h": true,
     "level": "A_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "IOSTUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1792906800000,
+    "price_usdt": 0.00082,
+    "change24_pct": 10.363,
+    "volume_ratio_24h": 3.545,
+    "prior_6h_high_usdt": 0.00091,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
