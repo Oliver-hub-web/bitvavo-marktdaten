@@ -1096,5 +1096,257 @@
     },
     "level": "WATCH_TEST",
     "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "UUSDC",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.9993,
+    "change24_pct": 0.02,
+    "volume_ratio_median24h": 12.63,
+    "buy_share_15m": 0.982,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": true
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 4.43e-06,
+    "change24_pct": 1.373,
+    "volume_ratio_median24h": 0.99,
+    "buy_share_15m": 0.793,
+    "factors": {
+      "volume": false,
+      "breakout_1h": true,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": true
+    },
+    "level": "WATCH_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "IOSTUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.000768,
+    "change24_pct": 0.524,
+    "volume_ratio_median24h": 4.97,
+    "buy_share_15m": 0.536,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": false,
+      "compression": false
+    },
+    "level": "WATCH_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "GRAMUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 1.252,
+    "change24_pct": 0.886,
+    "volume_ratio_median24h": 5.14,
+    "buy_share_15m": 0.654,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": true
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "CVCUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.02326,
+    "change24_pct": 1.174,
+    "volume_ratio_median24h": 4.39,
+    "buy_share_15m": 0.891,
+    "factors": {
+      "volume": true,
+      "breakout_1h": true,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": true
+    },
+    "level": "B_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "XRPEUR",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 1.1523,
+    "change24_pct": 0.99,
+    "volume_ratio_median24h": 2.36,
+    "buy_share_15m": 0.487,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": false,
+      "compression": true
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "YBUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.0657,
+    "change24_pct": 4.785,
+    "volume_ratio_median24h": 14.76,
+    "buy_share_15m": 0.768,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": false
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "ZROUSDC",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 1.714,
+    "change24_pct": 2.328,
+    "volume_ratio_median24h": 6.7,
+    "buy_share_15m": 0.507,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": false,
+      "compression": true
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "GRAMUSDC",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 1.25,
+    "change24_pct": 0.806,
+    "volume_ratio_median24h": 9.34,
+    "buy_share_15m": 0.794,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": true
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "LAZIOUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.41,
+    "change24_pct": 3.015,
+    "volume_ratio_median24h": 75.37,
+    "buy_share_15m": 0.73,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": false
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "WAXPUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.00452,
+    "change24_pct": -1.094,
+    "volume_ratio_median24h": 0.26,
+    "buy_share_15m": 0.489,
+    "factors": {
+      "volume": false,
+      "breakout_1h": true,
+      "breakout_6h": false,
+      "buyer_pressure": false,
+      "compression": true
+    },
+    "level": "WATCH_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "USDEUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 1.0008,
+    "change24_pct": -0.02,
+    "volume_ratio_median24h": 3.52,
+    "buy_share_15m": 0.782,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": true
+    },
+    "level": "A_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "MEGAUSDC",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.04514,
+    "change24_pct": -0.309,
+    "volume_ratio_median24h": 2.64,
+    "buy_share_15m": 0.49,
+    "factors": {
+      "volume": true,
+      "breakout_1h": false,
+      "breakout_6h": false,
+      "buyer_pressure": false,
+      "compression": false
+    },
+    "level": "WATCH_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
+  },
+  {
+    "symbol": "SKLUSDT",
+    "source": "Binance spot (NOT Bitvavo EUR)",
+    "candle_time": 1792923900000,
+    "price": 0.00403,
+    "change24_pct": 0.0,
+    "volume_ratio_median24h": 1.2,
+    "buy_share_15m": 0.879,
+    "factors": {
+      "volume": false,
+      "breakout_1h": true,
+      "breakout_6h": false,
+      "buyer_pressure": true,
+      "compression": true
+    },
+    "level": "WATCH_TEST",
+    "warning": "Experimental, not validated; no investment recommendation"
   }
 ]
