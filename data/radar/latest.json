@@ -1,20 +1,32 @@
 {
-  "scanned_at_utc": "2026-10-27T06:29:54.290396+00:00",
+  "scanned_at_utc": "2026-10-27T07:23:08.739368+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 1,
-  "new_signal_count": 1,
+  "radar_count": 2,
+  "new_signal_count": 2,
   "signals": [
     {
-      "symbol": "IOSTUSDT",
+      "symbol": "OSMOUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793082000000,
-      "price_usdt": 0.000799,
-      "change24_pct": 3.766,
-      "volume_ratio_24h": 3.354,
-      "prior_6h_high_usdt": 0.00087,
+      "candle_time": 1793085300000,
+      "price_usdt": 0.0587,
+      "change24_pct": 10.338,
+      "volume_ratio_24h": 8.84,
+      "prior_6h_high_usdt": 0.0672,
       "breakout_6h": false,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "WALUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1793085300000,
+      "price_usdt": 0.03488,
+      "change24_pct": 4.306,
+      "volume_ratio_24h": 1.214,
+      "prior_6h_high_usdt": 0.03484,
+      "breakout_6h": true,
       "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
     }
