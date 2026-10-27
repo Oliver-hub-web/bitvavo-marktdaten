@@ -1126,5 +1126,17 @@
     "breakout_6h": true,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "KAIAUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793114700000,
+    "price_usdt": 0.0355,
+    "change24_pct": 1.14,
+    "volume_ratio_24h": 4.14,
+    "prior_6h_high_usdt": 0.0358,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
