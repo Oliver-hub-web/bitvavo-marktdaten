@@ -1,5 +1,5 @@
 {
-  "scanned_at_utc": "2026-10-27T02:40:34.478812+00:00",
+  "scanned_at_utc": "2026-10-27T03:14:18.997467+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
@@ -9,11 +9,11 @@
     {
       "symbol": "IOSTUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793068500000,
-      "price_usdt": 0.000815,
-      "change24_pct": 8.234,
-      "volume_ratio_24h": 3.1,
-      "prior_6h_high_usdt": 0.00082,
+      "candle_time": 1793070300000,
+      "price_usdt": 0.000806,
+      "change24_pct": 5.085,
+      "volume_ratio_24h": 3.023,
+      "prior_6h_high_usdt": 0.00083,
       "breakout_6h": false,
       "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
