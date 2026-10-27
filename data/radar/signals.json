@@ -1174,5 +1174,17 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "LUMIAUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793134200000,
+    "price_usdt": 0.0869,
+    "change24_pct": 6.495,
+    "volume_ratio_24h": 0.681,
+    "prior_6h_high_usdt": 0.0865,
+    "breakout_6h": true,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
