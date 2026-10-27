@@ -1138,5 +1138,29 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "GTCUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793120100000,
+    "price_usdt": 0.2439,
+    "change24_pct": 6.474,
+    "volume_ratio_24h": 3.776,
+    "prior_6h_high_usdt": 0.24663,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "GNSUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793120100000,
+    "price_usdt": 0.4,
+    "change24_pct": 4.167,
+    "volume_ratio_24h": 4.59,
+    "prior_6h_high_usdt": 0.401,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
