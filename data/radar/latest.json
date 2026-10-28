@@ -1,24 +1,11 @@
 {
-  "scanned_at_utc": "2026-10-28T03:47:41.493578+00:00",
+  "scanned_at_utc": "2026-10-28T04:25:32.112853+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 1,
-  "new_signal_count": 1,
-  "signals": [
-    {
-      "symbol": "METUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793158800000,
-      "price_usdt": 0.3224,
-      "change24_pct": 2.512,
-      "volume_ratio_24h": 1.276,
-      "prior_6h_high_usdt": 0.3222,
-      "breakout_6h": true,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    }
-  ],
+  "radar_count": 0,
+  "new_signal_count": 0,
+  "signals": [],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
