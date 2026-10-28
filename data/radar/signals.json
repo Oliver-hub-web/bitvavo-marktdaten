@@ -1258,5 +1258,17 @@
     "breakout_6h": true,
     "level": "A_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "METUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793158800000,
+    "price_usdt": 0.3224,
+    "change24_pct": 2.512,
+    "volume_ratio_24h": 1.276,
+    "prior_6h_high_usdt": 0.3222,
+    "breakout_6h": true,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
