@@ -1342,5 +1342,29 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "RSRUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793185500000,
+    "price_usdt": 0.001634,
+    "change24_pct": 2.767,
+    "volume_ratio_24h": 4.581,
+    "prior_6h_high_usdt": 0.001647,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "GNSUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793185500000,
+    "price_usdt": 0.396,
+    "change24_pct": 1.02,
+    "volume_ratio_24h": 6.381,
+    "prior_6h_high_usdt": 0.4,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
