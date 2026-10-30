@@ -1,5 +1,5 @@
 {
-  "scanned_at_utc": "2026-10-30T20:10:57.939901+00:00",
+  "scanned_at_utc": "2026-10-30T20:48:12.244115+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
@@ -7,13 +7,13 @@
   "new_signal_count": 1,
   "signals": [
     {
-      "symbol": "KAIAUSDT",
+      "symbol": "OSMOUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793390700000,
-      "price_usdt": 0.0336,
-      "change24_pct": 0.299,
-      "volume_ratio_24h": 4.195,
-      "prior_6h_high_usdt": 0.0342,
+      "candle_time": 1793392800000,
+      "price_usdt": 0.0519,
+      "change24_pct": 4.848,
+      "volume_ratio_24h": 6.658,
+      "prior_6h_high_usdt": 0.054,
       "breakout_6h": false,
       "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
