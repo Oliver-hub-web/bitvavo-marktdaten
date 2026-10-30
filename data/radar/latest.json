@@ -1,12 +1,16 @@
 {
-  "scanned_at_utc": "2026-10-30T22:26:11.289173+00:00",
+  "scanned_at_utc": "2026-10-30T23:00:28.098297+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
-  "markets_ok": 16,
+  "markets_ok": 15,
   "radar_count": 0,
   "new_signal_count": 0,
   "signals": [],
   "errors": [
+    {
+      "symbol": "RLCUSDT",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
     {
       "symbol": "ZEUSUSDT",
       "error": "HTTP Error 400: Bad Request"
