@@ -1,44 +1,20 @@
 {
-  "scanned_at_utc": "2026-10-31T15:24:57.453374+00:00",
+  "scanned_at_utc": "2026-10-31T15:57:51.520745+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 3,
-  "new_signal_count": 3,
+  "radar_count": 1,
+  "new_signal_count": 1,
   "signals": [
     {
-      "symbol": "STRKUSDT",
+      "symbol": "GNSUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793459700000,
-      "price_usdt": 0.04536,
-      "change24_pct": 1.454,
-      "volume_ratio_24h": 6.023,
-      "prior_6h_high_usdt": 0.04549,
+      "candle_time": 1793461800000,
+      "price_usdt": 0.396,
+      "change24_pct": 4.211,
+      "volume_ratio_24h": 6.23,
+      "prior_6h_high_usdt": 0.402,
       "breakout_6h": false,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    },
-    {
-      "symbol": "RSRUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793459700000,
-      "price_usdt": 0.001619,
-      "change24_pct": 13.694,
-      "volume_ratio_24h": 6.043,
-      "prior_6h_high_usdt": 0.001572,
-      "breakout_6h": true,
-      "level": "A_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    },
-    {
-      "symbol": "CTKUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793459700000,
-      "price_usdt": 0.0948,
-      "change24_pct": 0.851,
-      "volume_ratio_24h": 0.201,
-      "prior_6h_high_usdt": 0.0946,
-      "breakout_6h": true,
       "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
     }
