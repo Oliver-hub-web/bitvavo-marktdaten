@@ -1894,5 +1894,41 @@
     "breakout_6h": true,
     "level": "A_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "METUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793513700000,
+    "price_usdt": 0.2838,
+    "change24_pct": 1.575,
+    "volume_ratio_24h": 12.557,
+    "prior_6h_high_usdt": 0.2855,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "OGNUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793513700000,
+    "price_usdt": 0.02487,
+    "change24_pct": 2.262,
+    "volume_ratio_24h": 0.678,
+    "prior_6h_high_usdt": 0.0247,
+    "breakout_6h": true,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "GTCUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793513700000,
+    "price_usdt": 0.23378,
+    "change24_pct": 1.683,
+    "volume_ratio_24h": 3.643,
+    "prior_6h_high_usdt": 0.236,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
