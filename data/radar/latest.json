@@ -1,11 +1,60 @@
 {
-  "scanned_at_utc": "2026-11-01T12:30:19.594957+00:00",
+  "scanned_at_utc": "2026-11-01T13:24:31.053025+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 0,
-  "new_signal_count": 0,
-  "signals": [],
+  "radar_count": 4,
+  "new_signal_count": 4,
+  "signals": [
+    {
+      "symbol": "OGNUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1793538900000,
+      "price_usdt": 0.02588,
+      "change24_pct": 6.942,
+      "volume_ratio_24h": 3.212,
+      "prior_6h_high_usdt": 0.02767,
+      "breakout_6h": false,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "LUMIAUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1793538900000,
+      "price_usdt": 0.0803,
+      "change24_pct": 2.685,
+      "volume_ratio_24h": 4.006,
+      "prior_6h_high_usdt": 0.0805,
+      "breakout_6h": false,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "CTKUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1793538900000,
+      "price_usdt": 0.0936,
+      "change24_pct": 0.322,
+      "volume_ratio_24h": 11.04,
+      "prior_6h_high_usdt": 0.0952,
+      "breakout_6h": false,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "IOSTUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1793538900000,
+      "price_usdt": 0.000724,
+      "change24_pct": 0.416,
+      "volume_ratio_24h": 8.792,
+      "prior_6h_high_usdt": 0.000726,
+      "breakout_6h": false,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    }
+  ],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
