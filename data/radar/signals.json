@@ -2350,5 +2350,29 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "RADUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793732100000,
+    "price_usdt": 0.239,
+    "change24_pct": 5.286,
+    "volume_ratio_24h": 7.432,
+    "prior_6h_high_usdt": 0.239,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "IOSTUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793732100000,
+    "price_usdt": 0.000701,
+    "change24_pct": 1.301,
+    "volume_ratio_24h": 3.698,
+    "prior_6h_high_usdt": 0.000711,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
