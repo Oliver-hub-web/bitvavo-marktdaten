@@ -1,5 +1,5 @@
 {
-  "scanned_at_utc": "2026-11-03T23:22:54.311490+00:00",
+  "scanned_at_utc": "2026-11-03T23:57:37.683872+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
@@ -7,15 +7,15 @@
   "new_signal_count": 1,
   "signals": [
     {
-      "symbol": "CTKUSDT",
+      "symbol": "MAGICUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793747700000,
-      "price_usdt": 0.0915,
-      "change24_pct": 1.78,
-      "volume_ratio_24h": 6.697,
-      "prior_6h_high_usdt": 0.0912,
+      "candle_time": 1793749800000,
+      "price_usdt": 0.0803,
+      "change24_pct": 3.346,
+      "volume_ratio_24h": 0.113,
+      "prior_6h_high_usdt": 0.0802,
       "breakout_6h": true,
-      "level": "A_TEST",
+      "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
     }
   ],
