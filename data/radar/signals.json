@@ -2662,5 +2662,29 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "METUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793808600000,
+    "price_usdt": 0.2964,
+    "change24_pct": 8.971,
+    "volume_ratio_24h": 5.501,
+    "prior_6h_high_usdt": 0.2958,
+    "breakout_6h": true,
+    "level": "A_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "CTKUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793808600000,
+    "price_usdt": 0.0922,
+    "change24_pct": 1.43,
+    "volume_ratio_24h": 18.947,
+    "prior_6h_high_usdt": 0.0935,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
