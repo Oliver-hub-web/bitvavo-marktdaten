@@ -1,5 +1,5 @@
 {
-  "scanned_at_utc": "2026-11-03T23:57:37.683872+00:00",
+  "scanned_at_utc": "2026-11-04T00:41:10.364142+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
@@ -7,14 +7,14 @@
   "new_signal_count": 1,
   "signals": [
     {
-      "symbol": "MAGICUSDT",
+      "symbol": "KAIAUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793749800000,
-      "price_usdt": 0.0803,
-      "change24_pct": 3.346,
-      "volume_ratio_24h": 0.113,
-      "prior_6h_high_usdt": 0.0802,
-      "breakout_6h": true,
+      "candle_time": 1793752500000,
+      "price_usdt": 0.0323,
+      "change24_pct": 0.0,
+      "volume_ratio_24h": 3.056,
+      "prior_6h_high_usdt": 0.033,
+      "breakout_6h": false,
       "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
     }
