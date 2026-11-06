@@ -2902,5 +2902,17 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "MAGICUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793945400000,
+    "price_usdt": 0.0872,
+    "change24_pct": 3.44,
+    "volume_ratio_24h": 3.862,
+    "prior_6h_high_usdt": 0.0875,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
