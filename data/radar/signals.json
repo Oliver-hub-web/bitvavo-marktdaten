@@ -2950,5 +2950,17 @@
     "breakout_6h": true,
     "level": "A_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "RLCUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1793974800000,
+    "price_usdt": 0.4557,
+    "change24_pct": 1.719,
+    "volume_ratio_24h": 5.291,
+    "prior_6h_high_usdt": 0.4552,
+    "breakout_6h": true,
+    "level": "A_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
