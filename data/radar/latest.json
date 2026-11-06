@@ -1,60 +1,11 @@
 {
-  "scanned_at_utc": "2026-11-06T15:12:22.497424+00:00",
+  "scanned_at_utc": "2026-11-06T15:57:06.794180+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 4,
-  "new_signal_count": 4,
-  "signals": [
-    {
-      "symbol": "RLCUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793977500000,
-      "price_usdt": 0.4491,
-      "change24_pct": 3.886,
-      "volume_ratio_24h": 3.123,
-      "prior_6h_high_usdt": 0.4566,
-      "breakout_6h": false,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    },
-    {
-      "symbol": "MAGICUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793977500000,
-      "price_usdt": 0.0917,
-      "change24_pct": 11.557,
-      "volume_ratio_24h": 4.878,
-      "prior_6h_high_usdt": 0.0914,
-      "breakout_6h": true,
-      "level": "A_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    },
-    {
-      "symbol": "KAIAUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793977500000,
-      "price_usdt": 0.0335,
-      "change24_pct": 2.761,
-      "volume_ratio_24h": 4.017,
-      "prior_6h_high_usdt": 0.0341,
-      "breakout_6h": false,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    },
-    {
-      "symbol": "IOSTUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1793977500000,
-      "price_usdt": 0.000707,
-      "change24_pct": 5.997,
-      "volume_ratio_24h": 4.678,
-      "prior_6h_high_usdt": 0.000718,
-      "breakout_6h": false,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    }
-  ],
+  "radar_count": 0,
+  "new_signal_count": 0,
+  "signals": [],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
