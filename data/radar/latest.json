@@ -1,5 +1,5 @@
 {
-  "scanned_at_utc": "2026-11-07T04:35:39.833831+00:00",
+  "scanned_at_utc": "2026-11-07T05:25:21.931467+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
@@ -7,15 +7,15 @@
   "new_signal_count": 1,
   "signals": [
     {
-      "symbol": "RSRUSDT",
+      "symbol": "METUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1794025800000,
-      "price_usdt": 0.001512,
-      "change24_pct": 1.477,
-      "volume_ratio_24h": 1.198,
-      "prior_6h_high_usdt": 0.00151,
+      "candle_time": 1794028500000,
+      "price_usdt": 0.282,
+      "change24_pct": 3.676,
+      "volume_ratio_24h": 27.004,
+      "prior_6h_high_usdt": 0.2806,
       "breakout_6h": true,
-      "level": "RADAR_TEST",
+      "level": "A_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
     }
   ],
