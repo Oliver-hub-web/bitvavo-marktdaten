@@ -3070,5 +3070,41 @@
     "breakout_6h": true,
     "level": "A_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "METUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794031500000,
+    "price_usdt": 0.2877,
+    "change24_pct": 6.595,
+    "volume_ratio_24h": 16.249,
+    "prior_6h_high_usdt": 0.2874,
+    "breakout_6h": true,
+    "level": "A_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "STRKUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794031500000,
+    "price_usdt": 0.0421,
+    "change24_pct": 5.461,
+    "volume_ratio_24h": 3.59,
+    "prior_6h_high_usdt": 0.04249,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "RSRUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794031500000,
+    "price_usdt": 0.00152,
+    "change24_pct": 1.604,
+    "volume_ratio_24h": 4.684,
+    "prior_6h_high_usdt": 0.00152,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
