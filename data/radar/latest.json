@@ -1,24 +1,11 @@
 {
-  "scanned_at_utc": "2026-11-08T11:23:52.804318+00:00",
+  "scanned_at_utc": "2026-11-08T12:00:03.599753+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 1,
-  "new_signal_count": 1,
-  "signals": [
-    {
-      "symbol": "GTCUSDT",
-      "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1794136500000,
-      "price_usdt": 0.17895,
-      "change24_pct": 6.088,
-      "volume_ratio_24h": 7.436,
-      "prior_6h_high_usdt": 0.18566,
-      "breakout_6h": false,
-      "level": "RADAR_TEST",
-      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
-    }
-  ],
+  "radar_count": 0,
+  "new_signal_count": 0,
+  "signals": [],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
