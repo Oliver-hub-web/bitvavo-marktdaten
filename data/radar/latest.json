@@ -1,5 +1,5 @@
 {
-  "scanned_at_utc": "2026-11-08T13:32:17.564320+00:00",
+  "scanned_at_utc": "2026-11-08T14:16:23.981655+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
@@ -7,13 +7,13 @@
   "new_signal_count": 1,
   "signals": [
     {
-      "symbol": "OSMOUSDT",
+      "symbol": "RSRUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1794144300000,
-      "price_usdt": 0.0392,
-      "change24_pct": 3.158,
-      "volume_ratio_24h": 36.303,
-      "prior_6h_high_usdt": 0.0392,
+      "candle_time": 1794147000000,
+      "price_usdt": 0.001698,
+      "change24_pct": 8.291,
+      "volume_ratio_24h": 4.562,
+      "prior_6h_high_usdt": 0.0017,
       "breakout_6h": false,
       "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
