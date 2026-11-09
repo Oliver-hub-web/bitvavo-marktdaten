@@ -1,21 +1,45 @@
 {
-  "scanned_at_utc": "2026-11-09T14:00:27.173273+00:00",
+  "scanned_at_utc": "2026-11-09T14:51:47.326460+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 1,
-  "new_signal_count": 1,
+  "radar_count": 3,
+  "new_signal_count": 3,
   "signals": [
     {
       "symbol": "KAIAUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1794232200000,
-      "price_usdt": 0.0316,
-      "change24_pct": 1.608,
-      "volume_ratio_24h": 3.387,
+      "candle_time": 1794235500000,
+      "price_usdt": 0.0317,
+      "change24_pct": 1.278,
+      "volume_ratio_24h": 4.609,
       "prior_6h_high_usdt": 0.0318,
       "breakout_6h": false,
       "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "CTKUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1794235500000,
+      "price_usdt": 0.0834,
+      "change24_pct": 3.346,
+      "volume_ratio_24h": 1.704,
+      "prior_6h_high_usdt": 0.0831,
+      "breakout_6h": true,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "WALUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1794235500000,
+      "price_usdt": 0.02845,
+      "change24_pct": 2.154,
+      "volume_ratio_24h": 4.52,
+      "prior_6h_high_usdt": 0.02836,
+      "breakout_6h": true,
+      "level": "A_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
     }
   ],
