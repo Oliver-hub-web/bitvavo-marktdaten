@@ -1,21 +1,33 @@
 {
-  "scanned_at_utc": "2026-11-11T16:20:31.663926+00:00",
+  "scanned_at_utc": "2026-11-11T17:21:12.978357+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 1,
-  "new_signal_count": 1,
+  "radar_count": 2,
+  "new_signal_count": 2,
   "signals": [
+    {
+      "symbol": "RLCUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1794417300000,
+      "price_usdt": 0.4088,
+      "change24_pct": 1.565,
+      "volume_ratio_24h": 3.248,
+      "prior_6h_high_usdt": 0.408,
+      "breakout_6h": true,
+      "level": "A_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
     {
       "symbol": "OSMOUSDT",
       "source": "Binance spot USDT, NICHT Bitvavo EUR",
-      "candle_time": 1794413700000,
-      "price_usdt": 0.0342,
-      "change24_pct": 4.587,
-      "volume_ratio_24h": 28.397,
-      "prior_6h_high_usdt": 0.034,
-      "breakout_6h": true,
-      "level": "A_TEST",
+      "candle_time": 1794417300000,
+      "price_usdt": 0.0339,
+      "change24_pct": 8.307,
+      "volume_ratio_24h": 3.275,
+      "prior_6h_high_usdt": 0.0352,
+      "breakout_6h": false,
+      "level": "RADAR_TEST",
       "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
     }
   ],
