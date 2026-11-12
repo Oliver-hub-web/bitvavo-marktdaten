@@ -4006,5 +4006,17 @@
     "breakout_6h": true,
     "level": "A_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "OSMOUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794526800000,
+    "price_usdt": 0.035,
+    "change24_pct": 5.422,
+    "volume_ratio_24h": 72.94,
+    "prior_6h_high_usdt": 0.0325,
+    "breakout_6h": true,
+    "level": "A_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
