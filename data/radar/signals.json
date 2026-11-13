@@ -4030,5 +4030,29 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "KAIAUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794533700000,
+    "price_usdt": 0.0324,
+    "change24_pct": 1.25,
+    "volume_ratio_24h": 3.875,
+    "prior_6h_high_usdt": 0.0327,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "OSMOUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794533700000,
+    "price_usdt": 0.0346,
+    "change24_pct": 3.593,
+    "volume_ratio_24h": 9.809,
+    "prior_6h_high_usdt": 0.0356,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
