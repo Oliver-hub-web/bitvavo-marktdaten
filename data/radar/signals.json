@@ -4270,5 +4270,17 @@
     "breakout_6h": true,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "GTCUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794790200000,
+    "price_usdt": 0.13314,
+    "change24_pct": 0.309,
+    "volume_ratio_24h": 4.101,
+    "prior_6h_high_usdt": 0.13466,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
