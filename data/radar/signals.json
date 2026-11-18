@@ -4342,5 +4342,29 @@
     "breakout_6h": false,
     "level": "RADAR_TEST",
     "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "RLCUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794988500000,
+    "price_usdt": 0.3591,
+    "change24_pct": 5.061,
+    "volume_ratio_24h": 3.278,
+    "prior_6h_high_usdt": 0.3676,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+  },
+  {
+    "symbol": "KAIAUSDT",
+    "source": "Binance spot USDT, NICHT Bitvavo EUR",
+    "candle_time": 1794988500000,
+    "price_usdt": 0.0305,
+    "change24_pct": 2.694,
+    "volume_ratio_24h": 3.291,
+    "prior_6h_high_usdt": 0.0307,
+    "breakout_6h": false,
+    "level": "RADAR_TEST",
+    "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
   }
 ]
