@@ -1,11 +1,96 @@
 {
-  "scanned_at_utc": "2026-11-25T09:21:30.804125+00:00",
+  "scanned_at_utc": "2026-11-25T19:26:57.118341+00:00",
   "source": "Binance spot USDT (nicht Bitvavo EUR)",
   "markets_requested": 20,
   "markets_ok": 16,
-  "radar_count": 0,
-  "new_signal_count": 0,
-  "signals": [],
+  "radar_count": 7,
+  "new_signal_count": 7,
+  "signals": [
+    {
+      "symbol": "RLCUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1795634400000,
+      "price_usdt": 0.3162,
+      "change24_pct": 3.57,
+      "volume_ratio_24h": 0.046,
+      "prior_6h_high_usdt": 0.3156,
+      "breakout_6h": true,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "OGNUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1795634400000,
+      "price_usdt": 0.01904,
+      "change24_pct": 0.687,
+      "volume_ratio_24h": 0.296,
+      "prior_6h_high_usdt": 0.01902,
+      "breakout_6h": true,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1795634400000,
+      "price_usdt": 0.0671,
+      "change24_pct": 1.054,
+      "volume_ratio_24h": 4.815,
+      "prior_6h_high_usdt": 0.0667,
+      "breakout_6h": true,
+      "level": "A_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "KAIAUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1795634400000,
+      "price_usdt": 0.0288,
+      "change24_pct": 3.971,
+      "volume_ratio_24h": 0.444,
+      "prior_6h_high_usdt": 0.0287,
+      "breakout_6h": true,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "LUMIAUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1795634400000,
+      "price_usdt": 0.0623,
+      "change24_pct": 1.797,
+      "volume_ratio_24h": 0.213,
+      "prior_6h_high_usdt": 0.062,
+      "breakout_6h": true,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "WALUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1795634400000,
+      "price_usdt": 0.0214,
+      "change24_pct": 1.23,
+      "volume_ratio_24h": 2.102,
+      "prior_6h_high_usdt": 0.02134,
+      "breakout_6h": true,
+      "level": "RADAR_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    },
+    {
+      "symbol": "IOSTUSDT",
+      "source": "Binance spot USDT, NICHT Bitvavo EUR",
+      "candle_time": 1795634400000,
+      "price_usdt": 0.000612,
+      "change24_pct": 3.905,
+      "volume_ratio_24h": 3.789,
+      "prior_6h_high_usdt": 0.00061,
+      "breakout_6h": true,
+      "level": "A_TEST",
+      "note": "Experimentell; keine Kaufempfehlung; EUR-Preis nicht bestaetigt"
+    }
+  ],
   "errors": [
     {
       "symbol": "ZEUSUSDT",
